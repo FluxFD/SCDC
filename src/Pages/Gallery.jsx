@@ -18,19 +18,19 @@ function Gallery() {
       </div>
 
       <div className="w-full space-y-4">
-        <div className="space-y-2 bg-customLightgray text-customDarkRed">
+        <div className="space-y-2 px-4 lg:px-0 bg-customLightgray text-customDarkRed">
           <div className="max-w-7xl mx-auto py-6">
-            <h2 className="text-3xl font-extrabold ">
+            <h2 className="text-xl sm:text-3xl font-extrabold ">
               Lorem ipsum dolor sit amet.
             </h2>
-            <p className="italic max-w-2xl">
+            <p className="italic text-sm max-w-2xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
               ullam.
             </p>
           </div>
         </div>
 
-        <div className="w-full max-w-7xl mx-auto grid grid-cols-3 gap-2">
+        <div className="w-full max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-3 px-2 gap-2">
           <img
             src="https://firebasestorage.googleapis.com/v0/b/connectifylocal-299a6.appspot.com/o/photos%2FDSC05845.jpg?alt=media&token=2a946647-6c02-4b21-9bf8-bd9fdf197e56"
             alt=""
@@ -51,19 +51,19 @@ function Gallery() {
 
       {/* FIRST GALLERY */}
       <div className="w-full space-y-4">
-        <div className="space-y-2 bg-customLightgray text-customDarkRed">
+        <div className="space-y-2 px-4 lg:px-0 bg-customLightgray text-customDarkRed">
           <div className="max-w-7xl mx-auto py-6">
-            <h2 className="text-3xl font-extrabold ">
+            <h2 className="text-xl sm:text-3xl font-extrabold ">
               Lorem ipsum dolor sit amet.
             </h2>
-            <p className="italic max-w-2xl">
+            <p className="italic text-sm max-w-2xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
               ullam.
             </p>
           </div>
         </div>
 
-        <div className="w-full max-w-7xl mx-auto grid grid-cols-3 gap-2">
+        <div className="w-full max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-3 px-2 gap-2">
           <img
             src="https://firebasestorage.googleapis.com/v0/b/connectifylocal-299a6.appspot.com/o/photos%2FDSC06102.jpg?alt=media&token=bef4ccd9-b07f-4db0-a785-402cb269a718"
             alt=""
@@ -84,19 +84,19 @@ function Gallery() {
 
       {/* FIRST GALLERY */}
       <div className="w-full space-y-4">
-        <div className="space-y-2 bg-customLightgray text-customDarkRed">
+        <div className="space-y-2 px-4 lg:px-0 bg-customLightgray text-customDarkRed">
           <div className="max-w-7xl mx-auto py-6">
-            <h2 className="text-3xl font-extrabold ">
+            <h2 className="text-xl sm:text-3xl font-extrabold ">
               Lorem ipsum dolor sit amet.
             </h2>
-            <p className="italic max-w-2xl">
+            <p className="italic text-sm max-w-2xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
               ullam.
             </p>
           </div>
         </div>
 
-        <div className="w-full max-w-7xl mx-auto grid grid-cols-3 gap-2">
+        <div className="w-full max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-3 px-2 gap-2">
           <img
             src="https://firebasestorage.googleapis.com/v0/b/connectifylocal-299a6.appspot.com/o/photos%2FDSC06999.jpg?alt=media&token=45163c81-1fe5-4ade-94e2-d9f169fa62a1"
             alt=""
@@ -178,19 +178,19 @@ function Gallery() {
 
       {/* SECOND GALLERY */}
       <div className="w-full space-y-4">
-        <div className="space-y-2 bg-customLightgray text-customDarkRed">
+        <div className="space-y-2 px-4 lg:px-0 bg-customLightgray text-customDarkRed">
           <div className="max-w-7xl mx-auto py-6">
-            <h2 className="text-3xl font-extrabold ">
+            <h2 className="text-xl sm:text-3xl font-extrabold ">
               Lorem ipsum dolor sit amet.
             </h2>
-            <p className="italic max-w-2xl">
+            <p className="italic text-sm max-w-2xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
               ullam.
             </p>
           </div>
         </div>
 
-        <div className="w-full max-w-7xl mx-auto grid grid-cols-3 gap-2">
+        <div className="w-full max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-3 px-2 gap-2">
           <img
             src="https://firebasestorage.googleapis.com/v0/b/connectifylocal-299a6.appspot.com/o/photos%2FDSC07081.jpg?alt=media&token=aedc3f64-3fe7-478b-9ceb-6fc697cc9a3b"
             alt=""
@@ -256,19 +256,19 @@ function Gallery() {
 
       {/* THIRD GALLERY */}
       <div className="w-full space-y-4">
-        <div className="space-y-2 bg-customLightgray text-customDarkRed">
+        <div className="space-y-2 px-4 lg:px-0 bg-customLightgray text-customDarkRed">
           <div className="max-w-7xl mx-auto py-6">
-            <h2 className="text-3xl font-extrabold ">
+            <h2 className="text-xl sm:text-3xl font-extrabold ">
               Lorem ipsum dolor sit amet.
             </h2>
-            <p className="italic max-w-2xl">
+            <p className="italic text-sm max-w-2xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
               ullam.
             </p>
           </div>
         </div>
 
-        <div className="w-full max-w-7xl mx-auto grid grid-cols-3 gap-2">
+        <div className="w-full max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-3 px-2 gap-2">
           <img
             src="https://firebasestorage.googleapis.com/v0/b/connectifylocal-299a6.appspot.com/o/drone%2FDJI_0294.jpg?alt=media&token=134a9038-b542-47f7-aec1-145d4b920fee"
             alt=""
@@ -320,19 +320,19 @@ function Gallery() {
 
       {/* FOURTH GALLERY */}
       <div className="w-full space-y-4">
-        <div className="space-y-2 bg-customLightgray text-customDarkRed">
+        <div className="space-y-2 px-4 lg:px-0 bg-customLightgray text-customDarkRed">
           <div className="max-w-7xl mx-auto py-6">
-            <h2 className="text-3xl font-extrabold ">
+            <h2 className="text-xl sm:text-3xl font-extrabold ">
               Lorem ipsum dolor sit amet.
             </h2>
-            <p className="italic max-w-2xl">
+            <p className="italic text-sm max-w-2xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
               ullam.
             </p>
           </div>
         </div>
 
-        <div className="w-full max-w-7xl mx-auto grid grid-cols-3 gap-2">
+        <div className="w-full max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-3 px-2 gap-2">
           <img
             src="https://firebasestorage.googleapis.com/v0/b/connectifylocal-299a6.appspot.com/o/photos%2FDSC07464.jpg?alt=media&token=52313b40-fb75-4e65-8da3-f510543e60eb"
             alt=""
@@ -383,19 +383,19 @@ function Gallery() {
 
       {/* FITFH GALLERY */}
       <div className="w-full space-y-4">
-        <div className="space-y-2 bg-customLightgray text-customDarkRed">
+        <div className="space-y-2 px-4 lg:px-0 bg-customLightgray text-customDarkRed">
           <div className="max-w-7xl mx-auto py-6">
-            <h2 className="text-3xl font-extrabold ">
+            <h2 className="text-xl sm:text-3xl font-extrabold ">
               Lorem ipsum dolor sit amet.
             </h2>
-            <p className="italic max-w-2xl">
+            <p className="italic text-sm max-w-2xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil,
               ullam.
             </p>
           </div>
         </div>
 
-        <div className="w-full max-w-7xl mx-auto grid grid-cols-3 gap-2">
+        <div className="w-full max-w-7xl mx-auto grid grid-cols-2 lg:grid-cols-3 px-2 gap-2">
           <img
             src="https://firebasestorage.googleapis.com/v0/b/connectifylocal-299a6.appspot.com/o/photos%2FDSC07531.jpg?alt=media&token=cff31504-ab6b-4fa0-b5bf-a6ba3abf6216"
             alt=""
