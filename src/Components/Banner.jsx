@@ -11,8 +11,8 @@ const Banner = () => {
         className="h-full w-full object-cover"
       />
 
-      <div className="w-full h-[50vh] md:w-[98%] md:h-[95%] text-white text-center absolute inset-0 m-auto sm:p-10 flex flex-col items-center justify-center gap-4 md:gap-8 bg-customDarkGray/50 md:rounded-xl">
-        <p className="text-xl sm:text-4xl lg:text-5xl font-extrabold">
+      <div className="scale-in-center w-full h-[25vh] md:w-[98%] md:h-[95%] text-white text-center absolute inset-0 m-auto sm:p-10 flex flex-col items-center justify-center gap-4 md:gap-8 bg-customDarkGray/50 md:rounded-xl">
+        <p className="text-xl sm:text-4xl lg:text-5xl font-extrabold ">
           Building Tomorrow's World Today <br />
           Your Reliable Building Partner
         </p>
