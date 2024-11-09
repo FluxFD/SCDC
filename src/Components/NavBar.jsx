@@ -1,4 +1,24 @@
-import { useState } from "react";
+import { PhoneCall } from "lucide-react";
+import React, { useState } from "react";
+
+const NAV_LINKS = [
+  {
+    title: "About Us",
+    href: "/#about",
+  },
+  {
+    title: "Services",
+    href: "/#services",
+  },
+  {
+    title: "Gallery",
+    href: "/#gallery",
+  },
+  {
+    title: "Contacts",
+    href: "/#contacts",
+  },
+];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,43 +28,44 @@ const Navbar = () => {
   };
 
   return (
-    <nav
-      className="shadow-md fixed w-full z-10"
-      style={{ backgroundColor: "#333333" }}
-    >
+    <nav className="shadow-lg fixed w-full z-50 bg-customDarkGray">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
         <div className="text-2xl font-bold text-white">
-          <img src="./scdc1.png" alt="logo" className="w-100 h-20" />
+          <a href="/">
+            <img
+              src="./scdc1.png"
+              alt="logo"
+              className="h-10 lg:h-14 object-contain "
+            />
+          </a>
         </div>
 
-        <div className="hidden md:flex space-x-6 font-bold">
-          <a href="/About" className="text-white hover:text-gray-600">
-            About Us
-          </a>
-          <a href="#services" className="text-white hover:text-gray-600">
-            Services
-          </a>
-          <a href="#gallery" className="text-white hover:text-gray-600">
-            Gallery
-          </a>
-          <a href="#contacts" className="text-white hover:text-gray-600">
-            Contacts
-          </a>
+        <div className="hidden lg:flex space-x-8 font-medium text-lg">
+          {NAV_LINKS.map((link) => (
+            <a
+              key={link.title}
+              href={link.href}
+              className="text-white hover:text-white/80"
+            >
+              {link.title}
+            </a>
+          ))}
         </div>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex space-x-6 items-center">
-          <button className="navBtn text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-200">
+        <div className="hidden lg:flex space-x-4 items-center">
+          <button className="italic font-medium flex items-center gap-2 px-6 py-2 rounded-lg bg-customOrange hover:bg-customOrange/90">
+            <PhoneCall className="size-5" />
             Call Us
           </button>
-          <button className="navBtn text-white px-4 py-2 rounded-md hover:bg-green-600 transition duration-200">
+          <button className=" italic text-white font-medium flex items-center gap-2 px-6 py-2 rounded-lg bg-white/20 hover:bg-white/30">
             Get a Quote
           </button>
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button
             onClick={toggleMenu}
             className="text-white focus:outline-none"
@@ -69,38 +90,27 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-md">
-          <div className="px-4 pb-4 space-y-2">
-            <a
-              href="#about"
-              className="block text-gray-800 hover:text-gray-600"
-            >
-              About Us
-            </a>
-            <a
-              href="#services"
-              className="block text-gray-800 hover:text-gray-600"
-            >
-              Services
-            </a>
-            <a
-              href="#gallery"
-              className="block text-gray-800 hover:text-gray-600"
-            >
-              Gallery
-            </a>
-            <a
-              href="#contacts"
-              className="block text-gray-800 hover:text-gray-600"
-            >
-              Contacts
-            </a>
-            <button className="w-full bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-200">
-              Call Us
-            </button>
-            <button className="w-full bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition duration-200">
-              Get a Quote
-            </button>
+        <div className="lg:hidden bg-white shadow-lg px-4 py-4">
+          <div className="space-y-4">
+            {NAV_LINKS.map((link) => (
+              <a
+                key={link.title}
+                href={link.href}
+                className="block text-gray-800 hover:text-gray-600"
+              >
+                {link.title}
+              </a>
+            ))}
+
+            <div className="space-y-2">
+              <button className="w-full flex items-center justify-center gap-2 bg-customOrange font-semibold px-4 py-2 rounded-lg hover:bg-customOrange/90 transition duration-200">
+                <PhoneCall className="size-5" />
+                Call Us
+              </button>
+              <button className="w-full bg-customDarkGray/50 text-white px-4 py-2 rounded-lg hover:bg-customDarkGray/40 transition duration-200">
+                Get a Quote
+              </button>
+            </div>
           </div>
         </div>
       )}
