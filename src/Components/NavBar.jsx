@@ -1,16 +1,16 @@
-import React, { useState } from 'react'
+import { useState } from "react";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
-    setIsOpen(!isOpen)
-  }
+    setIsOpen(!isOpen);
+  };
 
   return (
     <nav
       className="shadow-md fixed w-full z-10"
-      style={{ backgroundColor: '#333333' }}
+      style={{ backgroundColor: "#333333" }}
     >
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
@@ -19,7 +19,7 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex space-x-6 font-bold">
-          <a href="#about" className="text-white hover:text-gray-600">
+          <a href="/About" className="text-white hover:text-gray-600">
             About Us
           </a>
           <a href="#services" className="text-white hover:text-gray-600">
@@ -105,7 +105,7 @@ const Navbar = () => {
         </div>
       )}
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

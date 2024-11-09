@@ -3,9 +3,9 @@
 @tailwind utilities;
 #root {
   margin: 0 auto;
-  background-color: rgb(145, 145, 145);
+  background-color: rgb(92, 92, 92);
   color: white;
-  background-image: url('./BG.png');
+  background-image: url("./BG.png");
   background-size: cover;
 }
 
