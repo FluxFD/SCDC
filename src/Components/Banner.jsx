@@ -11,23 +11,44 @@ const Banner = () => {
         className="h-full w-full object-cover"
       />
 
-      <div className="w-full h-full md:w-auto md:h-fit text-white text-center absolute bottom-0 md:bottom-8 md:left-8 p-10 flex flex-col items-center justify-center gap-4 bg-customDarkGray/70 md:rounded-xl">
-        <p className="text-xl font-extrabold">
+      <div className="w-full h-[50vh] md:w-[98%] md:h-[95%] text-white text-center absolute inset-0 m-auto sm:p-10 flex flex-col items-center justify-center gap-4 md:gap-8 bg-customDarkGray/50 md:rounded-xl">
+        <p className="text-xl sm:text-4xl lg:text-5xl font-extrabold">
           Building Tomorrow's World Today <br />
           Your Reliable Building Partner
         </p>
 
-        <div className="w-[10rem] h-1 bg-customOrange rounded-full"></div>
+        <div className="w-[10rem] h-[2px] sm:h-1 bg-customOrange rounded-full"></div>
 
         <div className="flex items-center gap-4">
-          <button className="text-sm mt-4 px-4 py-2 font-bold bg-customOrange hover:bg-customOrange/90 text-black rounded-lg">
+          <button className="text-sm md:text-base px-4 py-2 font-bold bg-customOrange hover:bg-customOrange/90 text-black rounded-lg">
             Quote Now
           </button>
 
-          <button className="text-sm mt-4 px-4 py-2 font-bold bg-white/20 hover:bg-customDarkGray/90 rounded-lg">
+          <a
+            href="#gallery"
+            className="text-sm md:text-base px-4 py-2 font-bold bg-white/20 hover:bg-customDarkGray/90 rounded-lg"
+          >
             See Gallery
-          </button>
+          </a>
         </div>
+      </div>
+
+      <div className="hidden lg:flex absolute bottom-8 left-[47.5%] transform -translate-x-1/2 flex-col items-center animate-bounce">
+        <span className="text-white">Scroll down</span>
+        <svg
+          className="w-6 h-6 text-white"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"
+          ></path>
+        </svg>
       </div>
     </div>
   );

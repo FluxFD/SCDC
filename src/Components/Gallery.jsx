@@ -144,9 +144,12 @@ const Gallery = () => {
         </div>
       </PhotoProvider>
 
-      <button className="italic w-full max-w-[9rem] px-4 py-2 font-bold bg-customOrange hover:bg-customOrange/90 text-black rounded-xl">
+      <a
+        href="/gallery"
+        className="italic text-center w-full max-w-[9rem] px-4 py-2 font-bold bg-customOrange hover:bg-customOrange/90 text-black rounded-xl"
+      >
         See More
-      </button>
+      </a>
     </section>
   );
 };

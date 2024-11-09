@@ -5,6 +5,7 @@ import "swiper/css";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Services from "./Pages/Services";
+import Gallery from "./Pages/Gallery";
 
 import NavBar from "./Components/NavBar";
 import Footer from "./Components/Footer";
@@ -26,6 +27,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
             <Route path="/about" element={<About />} />
+            <Route path="/gallery" element={<Gallery />} />
           </Routes>
           <Footer />
         </Router>
