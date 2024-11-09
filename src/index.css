@@ -3,6 +3,15 @@
   color: #6F0203
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fec423;
+}
+
+
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
