@@ -1,5 +1,6 @@
 import { CircleChevronRight } from 'lucide-react'
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Services = () => {
   return (
@@ -15,7 +16,7 @@ const Services = () => {
       </div>
 
       <div className="w-full max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-        <a href="/services">
+        <Link to= "/services">
           <div className="space-y-4 hover:bg-white/50 hover:shadow p-4 rounded-lg transition duration-200 ease-in-out cursor-pointer">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/connectifylocal-299a6.appspot.com/o/photos%2FDSC07199.jpg?alt=media&token=989df2ee-2a70-4a36-b9b0-4bfaefac6e74"
@@ -34,8 +35,8 @@ const Services = () => {
               </div>
             </div>
           </div>
-        </a>
-        <a href="/services">
+        </Link>
+        <Link to="/services">
           <div className="space-y-4 hover:bg-white/50 hover:shadow p-4 rounded-lg transition duration-200 ease-in-out cursor-pointer">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/connectifylocal-299a6.appspot.com/o/photos%2FDSC07148.jpg?alt=media&token=c4bea332-a9dd-44bd-a989-a0d173d3902f"
@@ -54,9 +55,9 @@ const Services = () => {
               </div>
             </div>
           </div>
-        </a>
+        </Link>
 
-        <a href="/services">
+        <Link to="/services">
           <div className="space-y-4 hover:bg-white/50 hover:shadow p-4 rounded-lg transition duration-200 ease-in-out cursor-pointer">
             <img
               src="https://firebasestorage.googleapis.com/v0/b/connectifylocal-299a6.appspot.com/o/drone%2FDJI_0300.jpg?alt=media&token=ec418882-c620-4a5e-8de9-d0ce6d32d876"
@@ -75,7 +76,7 @@ const Services = () => {
               </div>
             </div>
           </div>
-        </a>
+        </Link>
       </div>
 
       <a

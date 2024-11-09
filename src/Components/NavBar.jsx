@@ -1,5 +1,6 @@
 import { PhoneCall } from "lucide-react";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const NAV_LINKS = [
   {
@@ -32,13 +33,13 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
         <div className="text-2xl font-bold text-white">
-          <a href="/">
+          <Link to="/">
             <img
               src="./scdc1.png"
               alt="logo"
               className="h-10 lg:h-14 object-contain "
             />
-          </a>
+          </Link>
         </div>
 
         <div className="hidden lg:flex space-x-8 font-medium text-lg">
