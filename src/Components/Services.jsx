@@ -79,12 +79,11 @@ const Services = () => {
         </Link>
       </div>
 
-      <a
-        href="/services"
+      <Link to= "/services"
         className="italic text-center mt-8 w-full max-w-[9rem] px-4 py-2 font-bold bg-customOrange hover:bg-customOrange/90 text-black rounded-lg"
       >
         See more
-      </a>
+      </Link>
     </section>
   )
 }
