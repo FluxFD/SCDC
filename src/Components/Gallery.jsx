@@ -1,5 +1,6 @@
 import React from "react";
 import { PhotoProvider, PhotoView } from "react-photo-view";
+import { Link } from "react-router-dom";
 
 const Gallery = () => {
   return (
@@ -144,12 +145,11 @@ const Gallery = () => {
         </div>
       </PhotoProvider>
 
-      <a
-        href="/gallery"
+      <Link to="/gallery"
         className="italic text-center w-full max-w-[9rem] px-4 py-2 font-bold bg-customOrange hover:bg-customOrange/90 text-black rounded-xl"
       >
         See More
-      </a>
+      </Link>
     </section>
   );
 };
