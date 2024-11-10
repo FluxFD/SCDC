@@ -11,7 +11,6 @@ import NavBar from "./Components/NavBar";
 import Footer from "./Components/Footer";
 import "react-photo-view/dist/react-photo-view.css";
 
-
 function App() {
   return (
     <>

@@ -1,9 +1,43 @@
-import React from "react";
+import { useState } from "react";
 import { FaFacebook, FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
+import useEmail from "../hooks/useEmail";
 
 const Contact = () => {
+  const { sendEmail, isSubmitting, statusMessage } = useEmail();
+
+  const [formData, setFormData] = useState({
+    fullName: "",
+    email: "",
+    message: "",
+    termsAccepted: false,
+  });
+
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: type === "checkbox" ? checked : value,
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!formData.termsAccepted) {
+      alert("Please accept the terms and conditions to proceed.");
+      return;
+    }
+
+    sendEmail(formData);
+    setFormData({
+      fullName: "",
+      email: "",
+      message: "",
+      termsAccepted: false,
+    });
+  };
+
   return (
     <section
       style={{
@@ -68,25 +102,44 @@ const Contact = () => {
           <div className="w-full max-w-lg flex flex-col items-center gap-6 py-6 px-8 rounded-2xl bg-white/20">
             <p className="text-2xl font-extrabold">Request a Call back</p>
 
-            <form className="space-y-4 text-black">
+            <form className="space-y-4 text-black" onSubmit={handleSubmit}>
               <input
                 type="text"
+                name="fullName"
+                value={formData.fullName}
+                onChange={handleChange}
                 className="w-full bg-white rounded-xl px-4 py-2 outline-none"
                 placeholder="Full Name"
+                required
               />
               <input
-                type="text"
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
                 className="w-full bg-white rounded-xl px-4 py-2 outline-none"
                 placeholder="Email Address"
+                required
               />
               <textarea
                 rows={10}
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
                 className="w-full max-h-52 bg-white rounded-xl px-4 py-2 outline-none"
                 placeholder="Message"
+                required
               />
 
               <div className="flex gap-2 items-start">
-                <input type="checkbox" className="mt-1 " />
+                <input
+                  type="checkbox"
+                  name="termsAccepted"
+                  checked={formData.termsAccepted}
+                  onChange={handleChange}
+                  className="mt-1"
+                  required
+                />
                 <p className="text-sm font-light text-customLightgray italic">
                   By submitting this form, you agree to provide accurate
                   information. We are committed to protecting your privacy, and
@@ -96,9 +149,16 @@ const Contact = () => {
                 </p>
               </div>
 
-              <button className="mt-4 w-full px-4 py-2 font-bold bg-customOrange hover:bg-customOrange/90 text-black rounded-lg">
-                Submit
+              <button
+                type="submit"
+                disabled={isSubmitting}
+                className="mt-4 w-full px-4 py-2 font-bold bg-customOrange hover:bg-customOrange/90 text-black rounded-lg"
+              >
+                {isSubmitting ? "Submitting..." : "Submit"}
               </button>
+              {statusMessage && (
+                <p className="text-center text-white mt-4">{statusMessage}</p>
+              )}
             </form>
           </div>
         </div>
