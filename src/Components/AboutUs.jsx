@@ -1,4 +1,3 @@
-import React from "react";
 import { PhotoProvider, PhotoView } from "react-photo-view";
 
 const AboutUs = () => {
@@ -12,14 +11,16 @@ const AboutUs = () => {
           <p className="text-lg sm:max-w-[90%] ">
             SCDC is dedicated to adapting innovative construction methods and
             sustainable practices, aiming to set new standards in the industry.
-            The company's goal is to exceed expectations on every project,
+            The company&apos;s goal is to exceed expectations on every project,
             contributing to infrastructural advancement and sustainable
             development across communities. This strategic focus positions SCDC
             as a forward-thinking leader in the construction sector.
           </p>
-          <button className="italic w-full max-w-[9rem] px-4 py-2 font-bold bg-customOrange hover:bg-customOrange/90 text-black rounded-lg">
-            Learn More
-          </button>
+          <a href="/about" className="w-full max-w-[9rem]">
+            <button className="italic px-4 py-2 font-bold bg-customOrange hover:bg-customOrange/90 text-black rounded-lg">
+              Learn More
+            </button>
+          </a>
         </div>
 
         <div className="space-y-2">
