@@ -56,10 +56,10 @@ const Navbar = () => {
 
         {/* Desktop Links */}
         <div className="hidden lg:flex space-x-4 items-center">
-          <button className="italic font-medium flex items-center gap-2 px-6 py-2 rounded-lg bg-customOrange hover:bg-customOrange/90">
+          {/* <button className="italic font-medium flex items-center gap-2 px-6 py-2 rounded-lg bg-customOrange hover:bg-customOrange/90">
             <PhoneCall className="size-5" />
             Call Us
-          </button>
+          </button> */}
           <button className=" italic text-white font-medium flex items-center gap-2 px-6 py-2 rounded-lg bg-white/20 hover:bg-white/30">
             Get a Quote
           </button>
