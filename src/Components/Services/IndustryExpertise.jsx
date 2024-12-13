@@ -19,7 +19,7 @@ const IndustyExpertiseImages = () => {
         </div>
       </div>
 
-      <div className="w-full px-6 md:border-r border-customDarkGray">
+      <div className="w-full px-6 md:border-r border-gray-400">
         <img
           src="https://firebasestorage.googleapis.com/v0/b/connectifylocal-299a6.appspot.com/o/photos%2FDSC07024.jpg?alt=media&token=0b613add-30ca-499a-b800-9f14cfc77c1a"
           alt=""

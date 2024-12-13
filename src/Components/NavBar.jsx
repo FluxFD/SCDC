@@ -1,5 +1,5 @@
 import { PhoneCall } from "lucide-react";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const NAV_LINKS = [
@@ -14,6 +14,10 @@ const NAV_LINKS = [
   {
     title: "Gallery",
     href: "/#gallery",
+  },
+  {
+    title: "Careers",
+    href: "/#careers",
   },
   {
     title: "Contacts",

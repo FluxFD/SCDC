@@ -6,6 +6,7 @@ import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Services from "./Pages/Services";
 import Gallery from "./Pages/Gallery";
+import Careers from "./Pages/Careers";
 
 import NavBar from "./Components/NavBar";
 import Footer from "./Components/Footer";
@@ -27,6 +28,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/about" element={<About />} />
             <Route path="/gallery" element={<Gallery />} />
+            <Route path="/careers" element={<Careers />} />
           </Routes>
           <Footer />
         </Router>
