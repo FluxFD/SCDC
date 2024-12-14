@@ -16,18 +16,31 @@ const Careers = () => {
     <div className="w-full min-h-screen flex flex-col font-inter pt-[64px] lg:pt-[80px]">
       <div
         style={{
-          backgroundImage: `url(/Career/Career_banner.png)`,
+          backgroundImage: `url(/used_career/Career_banner_2.jpg)`,
           backgroundPosition: "top center",
           backgroundSize: "cover",
         }}
         className="w-full lg:h-[75vh] py-8 flex justify-center bg-cover bg-center"
       >
-        <div className="text-[#8c1717] p-4 flex flex-col gap-8 justify-end items-center text-center">
-          <div className="bg-black bg-opacity-15 p-4">
-            <h1 className="text-2xl lg:text-6xl font-extrabold">
-              BUILD YOUR CAREER WITH US
-            </h1>
-            <h2 className="text-xl lg:text-1xl">BE PART OF SCDC TEAM NOW!</h2>
+        <div className="w-full flex flex-col gap-8 text-center">
+          <h1 className="text-xl lg:text-4xl text-[#f9b22b]">
+            BE PART OF SCDC TEAM NOW!
+          </h1>
+          <div className="flex justify-center items-center h-full w-full">
+            <div className="bg-black bg-opacity-25 flex flex-col items-center w-full">
+              <h1
+                className="text-white text-2xl lg:text-8xl font-extrabold"
+                style={{ opacity: 0.77 }}
+              >
+                BUILD YOUR
+              </h1>
+              <h1
+                className="text-white text-2xl lg:text-8xl font-extrabold"
+                style={{ opacity: 0.77 }}
+              >
+                CAREER WITH US
+              </h1>
+            </div>
           </div>
         </div>
       </div>

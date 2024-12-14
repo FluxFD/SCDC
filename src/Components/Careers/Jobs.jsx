@@ -7,9 +7,9 @@ const Jobs = ({ jobTitle, location }) => {
   const [selectedJobTitle, setSelectedJobTitle] = useState("");
 
   const allJobs = [
-    { title: "Civil Engineer", location: "New York" },
-    { title: "Laborers", location: "California" },
-    { title: "HR Officer", location: "Remote" },
+    { title: "Civil Engineer", location: "Sta. Cruz, Laguna" },
+    { title: "Laborers", location: "Sta. Cruz, Laguna" },
+    { title: "HR Officer", location: "Sta. Cruz, Laguna" },
   ];
 
   const filteredJobs = allJobs.filter(
