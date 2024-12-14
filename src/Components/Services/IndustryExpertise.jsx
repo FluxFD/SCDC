@@ -1,10 +1,9 @@
 const IndustyExpertiseImages = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4 md:px-6">
-      {/* First Item */}
       <div className="w-full px-6 md:border-r border-gray-400">
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/connectifylocal-299a6.appspot.com/o/photos%2FDSC07199.jpg?alt=media&token=989df2ee-2a70-4a36-b9b0-4bfaefac6e74"
+          src="/used_services/Pre_construction.png"
           alt=""
           className="w-full h-48 aspect-video object-cover rounded-lg shadow-md mt-2"
         />
@@ -21,7 +20,7 @@ const IndustyExpertiseImages = () => {
 
       <div className="w-full px-6 md:border-r border-gray-400">
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/connectifylocal-299a6.appspot.com/o/photos%2FDSC07024.jpg?alt=media&token=0b613add-30ca-499a-b800-9f14cfc77c1a"
+          src="/used_services/General_construction.jpg"
           alt=""
           className="w-full h-48 aspect-video object-cover rounded-lg shadow-md mt-2"
         />
@@ -38,7 +37,7 @@ const IndustyExpertiseImages = () => {
 
       <div className="w-full">
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/connectifylocal-299a6.appspot.com/o/photos%2FDSC07309.jpg?alt=media&token=27c19096-bb73-4049-b716-cc847f26fa3e"
+          src="/used_services/Construction_management.jpg"
           alt=""
           className="w-full h-48 aspect-video object-cover rounded-lg shadow-md mt-2"
         />

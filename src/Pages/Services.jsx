@@ -7,7 +7,7 @@ const Services = () => {
     <div className="w-full min-h-screen flex flex-col font-inter pt-[64px] lg:pt-[80px]">
       <div
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url(https://firebasestorage.googleapis.com/v0/b/connectifylocal-299a6.appspot.com/o/photos%2FDSC07403.jpg?alt=media&token=3abe769d-ece7-4370-abe2-b5a9e8aae1af)`,
+          backgroundImage: `url(/used_services/Services_banner.png)`,
         }}
         className="w-full lg:h-[65vh] py-8 flex justify-center bg-cover bg-center"
       >
@@ -52,10 +52,10 @@ const Services = () => {
 
       <div>
         <img
-          src="https://firebasestorage.googleapis.com/v0/b/connectifylocal-299a6.appspot.com/o/photos%2FDSC07003.jpg?alt=media&token=753caed4-cc6b-43df-914b-64e676d80558"
+          src="/used_services/Services_footer.jpg"
           alt="Company Timeline"
           className="h-[200px] sm:h-[500px] w-full object-cover"
-          style={{ filter: "sepia(0.3) brightness(1)" }}
+          style={{ filter: "sepia(0.1) brightness(1)" }}
         />
       </div>
 

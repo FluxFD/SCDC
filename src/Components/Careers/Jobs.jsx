@@ -9,7 +9,7 @@ const Jobs = ({ jobTitle, location }) => {
   const allJobs = [
     { title: "Civil Engineer", location: "Sta. Cruz, Laguna" },
     { title: "Laborers", location: "Sta. Cruz, Laguna" },
-    { title: "HR Officer", location: "Sta. Cruz, Laguna" },
+    { title: "HR Officer", location: "Sta. Cruz, Lagunaz" },
   ];
 
   const filteredJobs = allJobs.filter(
