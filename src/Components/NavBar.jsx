@@ -17,7 +17,11 @@ const NAV_LINKS = [
   },
   {
     title: "Careers",
-    href: "/#careers",
+    href: "/careers",
+  },
+  {
+    title: "Other Services",
+    href: "/#other-services",
   },
   {
     title: "Contacts",
@@ -64,7 +68,7 @@ const Navbar = () => {
             <PhoneCall className="size-5" />
             Call Us
           </button> */}
-          <button className=" italic text-white font-medium flex items-center gap-2 px-6 py-2 rounded-lg bg-white/20 hover:bg-white/30">
+          <button className=" italic font-medium flex items-center gap-2 px-6 py-2 rounded-lg bg-customOrange ">
             Get a Quote
           </button>
         </div>
