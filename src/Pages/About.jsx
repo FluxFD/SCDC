@@ -1,6 +1,7 @@
 import AboutHeader from "../Components/About/AboutHeader";
 import AboutFounders from "../Components/About/AboutFounders";
 import AboutSubsidiaries from "../Components/About/AboutSubsidiaries";
+import AboutValues from "../Components/About/AboutValues";
 
 function About() {
   return (
@@ -12,7 +13,12 @@ function About() {
         <AboutFounders />
       </div>
       <div className="bg-[#e8e8e8] h-auto">
-        <AboutSubsidiaries />
+        <div>
+          <AboutSubsidiaries />
+        </div>
+        <div className="mt-5">
+          <AboutValues />
+        </div>
       </div>
       <div></div>
     </div>
