@@ -3,6 +3,8 @@ import AboutFounders from "../Components/About/AboutFounders";
 import AboutSubsidiaries from "../Components/About/AboutSubsidiaries";
 import AboutValues from "../Components/About/AboutValues";
 import AboutTimeline from "../Components/About/AboutTimeline";
+import AboutTeam from "../Components/About/AboutTeam";
+import Contact from "../Components/Contact";
 
 function About() {
   return (
@@ -28,6 +30,14 @@ function About() {
         <div className="mb-10 ">
           <AboutTimeline />
         </div>
+      </div>
+      <div className="bg-[#5a0707] text-white">
+        <div>
+          <AboutTeam />
+        </div>
+      </div>
+      <div>
+        <Contact />
       </div>
     </div>
   );
