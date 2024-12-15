@@ -2,6 +2,7 @@ import AboutHeader from "../Components/About/AboutHeader";
 import AboutFounders from "../Components/About/AboutFounders";
 import AboutSubsidiaries from "../Components/About/AboutSubsidiaries";
 import AboutValues from "../Components/About/AboutValues";
+import AboutTimeline from "../Components/About/AboutTimeline";
 
 function About() {
   return (
@@ -20,7 +21,14 @@ function About() {
           <AboutValues />
         </div>
       </div>
-      <div></div>
+      <div className="bg-[#e8e8e8] text-center">
+        <div className="mt-10 p-8 text-3xl font-extrabold">
+          <h1>MILESTONES THROUGH THE YEARS </h1>
+        </div>
+        <div className="mb-10 ">
+          <AboutTimeline />
+        </div>
+      </div>
     </div>
   );
 }

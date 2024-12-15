@@ -14,6 +14,14 @@
   margin: 0 auto;
 }
 
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 /* .logo {
   height: 6em;
   padding: 1.5em;
