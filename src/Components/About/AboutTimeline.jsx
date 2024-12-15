@@ -50,7 +50,7 @@ const timelineData = [
   },
 ];
 
-const TimelineCarousel = () => {
+const AboutTimeline = () => {
   const timelineContainer = useRef(null);
   const [isAtStart, setIsAtStart] = useState(true);
   const [isAtEnd, setIsAtEnd] = useState(false);
@@ -111,7 +111,6 @@ const TimelineCarousel = () => {
         </div>
       </div>
 
-      {/* Left Arrow */}
       {!isAtStart && (
         <div
           onClick={() => scroll("prev")}
@@ -121,7 +120,6 @@ const TimelineCarousel = () => {
         </div>
       )}
 
-      {/* Right Arrow */}
       {!isAtEnd && (
         <div
           onClick={() => scroll("next")}
@@ -134,4 +132,4 @@ const TimelineCarousel = () => {
   );
 };
 
-export default TimelineCarousel;
+export default AboutTimeline;
