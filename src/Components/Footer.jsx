@@ -15,7 +15,7 @@ const Footer = () => {
         </p>
       </div>
       <p className="text-lg italic font-bold text-center">
-        Building Tomorrow's World Today, Your Reliable Building Partner
+        Your Reliable Building Partner
       </p>
 
       <div
