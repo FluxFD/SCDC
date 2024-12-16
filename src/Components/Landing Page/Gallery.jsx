@@ -25,6 +25,7 @@ const Gallery = () => {
             <PhotoView src="/used_landing_page/used_our_work/Picture 1.jpg">
               <div className="col-span-4 h-full">
                 <img
+                  loading="lazy"
                   src="/used_landing_page/used_our_work/Picture 1.jpg"
                   alt="Left Image"
                   className="w-full h-full object-cover"
@@ -35,6 +36,7 @@ const Gallery = () => {
             <PhotoView src="/used_landing_page/used_our_work/Picture 2.jpg">
               <div className="col-span-4 h-full">
                 <img
+                  loading="lazy"
                   src="/used_landing_page/used_our_work/Picture 2.jpg"
                   alt="Middle Image"
                   className="w-full h-full object-cover"
@@ -45,6 +47,7 @@ const Gallery = () => {
             <PhotoView src="/used_landing_page/used_our_work/Picture 3.jpg">
               <div className="col-span-4 h-full">
                 <img
+                  loading="lazy"
                   src="/used_landing_page/used_our_work/Picture 3.jpg"
                   alt="Right Image"
                   className="w-full h-full object-cover"
@@ -57,6 +60,7 @@ const Gallery = () => {
             <PhotoView src="/used_landing_page/used_our_work/Picture 4.png">
               <div className="sm:col-span-3 h-full">
                 <img
+                  loading="lazy"
                   src="/used_landing_page/used_our_work/Picture 4.png"
                   alt="Left Image"
                   className="w-full h-full object-cover"
@@ -67,6 +71,7 @@ const Gallery = () => {
             <PhotoView src="/used_landing_page/used_our_work/Picture 5.png">
               <div className="sm:col-span-6 h-full">
                 <img
+                  loading="lazy"
                   src="/used_landing_page/used_our_work/Picture 5.png"
                   alt="Middle Image"
                   className="w-full h-[11rem] md:h-[15rem] xl:h-[340px] object-cover"
@@ -77,6 +82,7 @@ const Gallery = () => {
             <PhotoView src="/used_landing_page/used_our_work/Picture 6.png">
               <div className="sm:col-span-3 h-full">
                 <img
+                  loading="lazy"
                   src="/used_landing_page/used_our_work/Picture 6.png"
                   alt="Right Image"
                   className="w-full h-full object-cover"
@@ -89,6 +95,7 @@ const Gallery = () => {
             <PhotoView src="/used_landing_page/used_our_work/Picture 7.jpg">
               <div className="sm:col-span-4 h-full">
                 <img
+                  loading="lazy"
                   src="/used_landing_page/used_our_work/Picture 7.jpg"
                   alt="Left Image"
                   className="w-full h-[11rem] md:h-[15rem] xl:h-[340px] object-cover"
@@ -99,6 +106,7 @@ const Gallery = () => {
             <PhotoView src="/used_landing_page/used_our_work/Picture 8.jpg">
               <div className="sm:col-span-4 h-full">
                 <img
+                  loading="lazy"
                   src="/used_landing_page/used_our_work/Picture 8.jpg"
                   alt="Middle Image"
                   className="w-full h-[11rem] md:h-[15rem] xl:h-[340px] object-cover"
@@ -109,6 +117,7 @@ const Gallery = () => {
             <PhotoView src="/used_landing_page/used_our_work/Picture 9.jpg">
               <div className="sm:col-span-3 h-full">
                 <img
+                  loading="lazy"
                   src="/used_landing_page/used_our_work/Picture 9.jpg"
                   alt="Right Image"
                   className="w-full h-full object-cover"
@@ -121,6 +130,7 @@ const Gallery = () => {
             <PhotoView src="/used_landing_page/used_our_work/Picture 10.jpg">
               <div className="col-span-4 h-full">
                 <img
+                  loading="lazy"
                   src="/used_landing_page/used_our_work/Picture 10.jpg"
                   alt="Left Image"
                   className="w-full h-full object-cover"
@@ -131,6 +141,7 @@ const Gallery = () => {
             <PhotoView src="/used_landing_page/used_our_work/Picture 11.jpg">
               <div className="col-span-4 h-full">
                 <img
+                  loading="lazy"
                   src="/used_landing_page/used_our_work/Picture 11.jpg"
                   alt="Middle Image"
                   className="w-full h-full object-cover"
@@ -141,6 +152,7 @@ const Gallery = () => {
             <PhotoView src="/used_landing_page/used_our_work/Picture 12.jpg">
               <div className="col-span-4 h-full">
                 <img
+                  loading="lazy"
                   src="/used_landing_page/used_our_work/Picture 12.jpg"
                   alt="Right Image"
                   className="w-full h-full object-cover"
@@ -151,12 +163,12 @@ const Gallery = () => {
         </div>
       </PhotoProvider>
 
-      <Link
-        to="/gallery"
+      <a
+        href="/gallery"
         className="italic text-center w-full max-w-[9rem] px-4 py-2 font-bold bg-customOrange hover:bg-customOrange/90 text-black rounded-full"
       >
         See All
-      </Link>
+      </a>
     </section>
   );
 };

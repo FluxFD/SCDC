@@ -1,4 +1,4 @@
-import { PhoneCall } from "lucide-react";
+import { ChevronDown, ChevronUp, PhoneCall } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -9,7 +9,11 @@ const NAV_LINKS = [
   },
   {
     title: "Services",
-    href: "/#services",
+    href: "/services",
+  },
+  {
+    title: "Projects",
+    href: "/projects",
   },
   {
     title: "Gallery",
@@ -21,11 +25,19 @@ const NAV_LINKS = [
   },
   {
     title: "Other Services",
-    href: "/#other-services",
+    href: "#other-services",
+    dropdownItems: [
+      { title: "Landscape Solution", href: "/other-services#" },
+      {
+        title: "Aggregates Transport Solutions (Trucking)",
+        href: "/other-services#trucking",
+      },
+      { title: "Rental of Equipment", href: "/other-services#rental" },
+    ],
   },
   {
     title: "Contacts",
-    href: "/#contacts",
+    href: "/contact-us",
   },
 ];
 
@@ -50,17 +62,36 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div className="hidden lg:flex space-x-8 font-medium text-lg">
-          {NAV_LINKS.map((link) => (
-            <a
-              key={link.title}
-              href={link.href}
-              className="text-white hover:text-white/80"
-            >
-              {link.title}
-            </a>
+        <ul className="hidden lg:flex space-x-8 font-medium text-lg">
+          {NAV_LINKS.map((link, index) => (
+            <li key={index} className="relative group">
+              <a
+                key={link.title}
+                href={link.href}
+                className="text-white hover:text-white/80"
+              >
+                {link.title}
+              </a>
+              {link.dropdownItems && (
+                <ul className="absolute -left-1 hidden pt-2 group-hover:block">
+                  {link.dropdownItems.map((item, itemIndex) => (
+                    <li
+                      key={itemIndex}
+                      className="bg-customDarkGray hover:bg-customDarkGray/95"
+                    >
+                      <a
+                        href={item.href}
+                        className="block px-6 py-2 text-base text-white whitespace-nowrap"
+                      >
+                        {item.title}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
           ))}
-        </div>
+        </ul>
 
         {/* Desktop Links */}
         <div className="hidden lg:flex space-x-4 items-center">
@@ -68,9 +99,11 @@ const Navbar = () => {
             <PhoneCall className="size-5" />
             Call Us
           </button> */}
-          <button className=" italic font-medium flex items-center gap-2 px-6 py-2 rounded-lg bg-customOrange ">
-            Get a Quote
-          </button>
+          <Link to="/contact-us">
+            <button className="italic font-medium flex items-center gap-2 px-6 py-2 rounded-lg bg-customOrange hover:bg-customOrange/90">
+              Get a Quote
+            </button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -98,33 +131,70 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      {isOpen && (
-        <div className="lg:hidden bg-white shadow-lg px-4 py-4">
-          <div className="space-y-4">
-            {NAV_LINKS.map((link) => (
-              <a
-                key={link.title}
-                href={link.href}
-                className="block text-gray-800 hover:text-gray-600"
-              >
-                {link.title}
-              </a>
-            ))}
-
-            <div className="space-y-2">
-              <button className="w-full flex items-center justify-center gap-2 bg-customOrange font-semibold px-4 py-2 rounded-lg hover:bg-customOrange/90 transition duration-200">
-                <PhoneCall className="size-5" />
-                Call Us
-              </button>
-              <button className="w-full bg-customDarkGray/50 text-white px-4 py-2 rounded-lg hover:bg-customDarkGray/40 transition duration-200">
-                Get a Quote
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+      {isOpen && <MobileNav />}
     </nav>
   );
 };
+
+export function MobileNav() {
+  const [isOtherServicesOpen, setIsOtherServicesOpen] = useState(false);
+
+  return (
+    <div className="lg:hidden bg-white shadow-lg px-4 py-4">
+      <div className="space-y-2">
+        {NAV_LINKS.map((link) => (
+          <div key={link.title} className="text-gray-800">
+            {link.dropdownItems ? (
+              <div>
+                <button
+                  onClick={() => setIsOtherServicesOpen(!isOtherServicesOpen)}
+                  className="flex items-center justify-between w-full py-2 hover:text-gray-600"
+                >
+                  {link.title}
+                  {isOtherServicesOpen ? (
+                    <ChevronUp className="h-5 w-5" />
+                  ) : (
+                    <ChevronDown className="h-5 w-5" />
+                  )}
+                </button>
+                {isOtherServicesOpen && (
+                  <div className="pl-4 space-y-2 mt-2">
+                    {link.dropdownItems.map((item) => (
+                      <a
+                        key={item.title}
+                        href={item.href}
+                        className="block py-2 text-gray-600 hover:text-gray-800"
+                      >
+                        {item.title}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ) : (
+              <a href={link.href} className="block py-2 hover:text-gray-600">
+                {link.title}
+              </a>
+            )}
+          </div>
+        ))}
+
+        <div className="space-y-2 pt-4">
+          <a href="/contact-us" className="block w-full">
+            <button className="w-full flex items-center justify-center gap-2 bg-customOrange font-semibold px-4 py-2 rounded-lg hover:bg-customOrange/90 transition duration-200">
+              <PhoneCall className="h-5 w-5" />
+              Call Us
+            </button>
+          </a>
+          <a href="/contact-us" className="block w-full">
+            <button className="w-full bg-customDarkGray/50 text-white px-4 py-2 rounded-lg hover:bg-customDarkGray/40 transition duration-200">
+              Get a Quote
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default Navbar;

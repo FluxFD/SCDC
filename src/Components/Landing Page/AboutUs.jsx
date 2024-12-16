@@ -26,6 +26,7 @@ const AboutUs = () => {
         <PhotoProvider speed={() => 200}>
           <PhotoView src="https://firebasestorage.googleapis.com/v0/b/connectifylocal-299a6.appspot.com/o/photos%2FDSC06100.jpg?alt=media&token=1fa579c5-edbb-48a5-a723-a804cf8e2d37">
             <img
+              loading="lazy"
               src="https://firebasestorage.googleapis.com/v0/b/connectifylocal-299a6.appspot.com/o/photos%2FDSC06100.jpg?alt=media&token=1fa579c5-edbb-48a5-a723-a804cf8e2d37"
               alt="Grid 1"
               className="aspect-video object-cover object-top rounded-2xl"

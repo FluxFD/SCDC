@@ -50,43 +50,52 @@ const IndustryExpertise = () => {
         </div>
 
         <SwiperSlide className="relative w-full h-full flex items-center pb-16">
-          <div className="relative w-full max-w-3xl mx-auto ">
-            <img
-              src="/used_landing_page/used_industry_expertise/Picture 1.png"
-              alt=""
-              className="object-cover aspect-video h-full w-full"
-            />
+          <a href="/services#" className="mx-auto">
+            <div className="relative w-full max-w-3xl mx-auto ">
+              <img
+                loading="lazy"
+                src="/used_landing_page/used_industry_expertise/Picture 1.png"
+                alt=""
+                className="object-cover aspect-video h-full w-full"
+              />
 
-            <div className="absolute z-10 -bottom-8 right-16 py-4 px-8 text-xl sm:text-2xl font-bold text-center text-white bg-[#737373]">
-              Pre - Construction
+              <div className="absolute z-10 -bottom-8 right-16 py-4 px-8 text-xl sm:text-2xl font-bold text-center text-white bg-[#737373]">
+                Pre - Construction
+              </div>
             </div>
-          </div>
+          </a>
         </SwiperSlide>
         <SwiperSlide className="relative w-full h-full flex items-center pb-16">
-          <div className="relative w-full max-w-3xl mx-auto ">
-            <img
-              src="/used_landing_page/used_industry_expertise/Picture 2.jpg"
-              alt=""
-              className="object-cover aspect-video h-full w-full"
-            />
+          <a href="/services#" className="mx-auto">
+            <div className="relative w-full max-w-3xl mx-auto ">
+              <img
+                loading="lazy"
+                src="/used_landing_page/used_industry_expertise/Picture 2.jpg"
+                alt=""
+                className="object-cover aspect-video h-full w-full"
+              />
 
-            <div className="absolute z-10 -bottom-8 right-16 py-4 px-8 text-xl sm:text-2xl font-bold text-center text-white bg-[#737373]">
-              General Construction
+              <div className="absolute z-10 -bottom-8 right-16 py-4 px-8 text-xl sm:text-2xl font-bold text-center text-white bg-[#737373]">
+                General Construction
+              </div>
             </div>
-          </div>
+          </a>
         </SwiperSlide>
         <SwiperSlide className="relative w-full h-full flex items-center pb-16">
-          <div className="relative w-full max-w-3xl mx-auto ">
-            <img
-              src="/used_landing_page/used_industry_expertise/Picture 3.jpg"
-              alt=""
-              className="object-cover aspect-video h-full w-full"
-            />
+          <a href="/services#" className="mx-auto">
+            <div className="relative w-full max-w-3xl mx-auto ">
+              <img
+                loading="lazy"
+                src="/used_landing_page/used_industry_expertise/Picture 3.jpg"
+                alt=""
+                className="object-cover aspect-video h-full w-full"
+              />
 
-            <div className="absolute z-10 -bottom-8 right-12 sm:right-16 py-4 px-8 text-lg sm:text-2xl font-bold text-center text-white bg-[#737373]">
-              Construction Management
+              <div className="absolute z-10 -bottom-8 right-12 sm:right-16 py-4 px-8 text-lg sm:text-2xl font-bold text-center text-white bg-[#737373]">
+                Construction Management
+              </div>
             </div>
-          </div>
+          </a>
         </SwiperSlide>
       </Swiper>
     </section>
