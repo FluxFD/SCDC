@@ -14,8 +14,15 @@ import "react-photo-view/dist/react-photo-view.css";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
 import OtherServices from "./Pages/OtherServices";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
       <main

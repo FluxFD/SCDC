@@ -9,7 +9,7 @@ const ProjectBox = ({ project, onClick }) => {
         loading="lazy"
         src={project.images?.[0]}
         alt={project.title}
-        className="object-cover max-h-56 w-full h-full object-right"
+        className="object-cover h-56 w-full object-right"
       />
 
       <div className="p-4">

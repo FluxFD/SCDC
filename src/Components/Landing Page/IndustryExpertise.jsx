@@ -35,12 +35,16 @@ const IndustryExpertise = () => {
         <div className="w-full max-w-5xl mx-auto flex justify-end pb-2">
           <div className="flex items-center gap-3">
             <div
+              data-aos="zoom-in"
+              data-aos-duration="2000"
               onClick={() => swiperRef.current?.swiper.slidePrev()}
               className="size-12 sm:size-16 rounded-full border-4 border-[#737373] flex justify-center items-center cursor-pointer transform transition-transform duration-200 hover:scale-105 active:scale-100"
             >
               <FaArrowLeft className="size-6 sm:size-9 text-[#737373]" />
             </div>
             <div
+              data-aos="zoom-in"
+              data-aos-duration="2000"
               onClick={() => swiperRef.current?.swiper.slideNext()}
               className="size-12 sm:size-16 rounded-full border-4 border-customOrange flex justify-center items-center cursor-pointer transform transition-transform duration-200 hover:scale-105 active:scale-100"
             >

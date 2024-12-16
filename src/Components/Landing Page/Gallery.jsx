@@ -7,7 +7,7 @@ const Gallery = () => {
     <section className="relative text-customDarkRed w-full py-12 lg:py-20 flex flex-col items-center justify-center gap-8 sm:gap-16">
       <div id="gallery" className="absolute -top-16 "></div>
 
-      <div className="space-y-6 text-center">
+      <div data-aos-duration="1000" className="space-y-6 text-center">
         <h2 className="text-4xl font-bold text-customDarkRed ">
           Our Work in Action
         </h2>
@@ -20,7 +20,11 @@ const Gallery = () => {
       </div>
 
       <PhotoProvider speed={() => 200}>
-        <div className="w-full max-w-screen-2xl ">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="w-full max-w-screen-2xl "
+        >
           <div className="grid sm:grid-cols-12">
             <PhotoView src="/used_landing_page/used_our_work/Picture 1.jpg">
               <div className="col-span-4 h-full">

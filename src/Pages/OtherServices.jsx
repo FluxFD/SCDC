@@ -22,7 +22,12 @@ const OtherServices = () => {
         <section className="relative flex flex-col md:flex-row items-center gap-8">
           <div id="landscaping" className="absolute -top-16 "></div>
 
-          <div className="md:w-1/2">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="500"
+            data-aos-duration="1500"
+            className="md:w-1/2"
+          >
             <Tree className="w-24 h-24 text-[#641717] mb-4" strokeWidth={1} />
             <h2 className="text-3xl font-bold mb-4 text-customDarkRed">
               Landscape Solution
@@ -35,7 +40,12 @@ const OtherServices = () => {
               year-round.
             </p>
           </div>
-          <div className="md:w-1/2 space-y-2">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="1500"
+            className="md:w-1/2 space-y-2"
+          >
             <PhotoProvider speed={() => 200}>
               <PhotoView src="/used_other_services/DSC07423.jpg">
                 <img
@@ -85,7 +95,12 @@ const OtherServices = () => {
         <section className="relative flex flex-col md:flex-row-reverse items-center gap-8">
           <div id="trucking" className="absolute sm:-top-[120px] "></div>
 
-          <div className="md:w-1/2">
+          <div
+            data-aos="fade-left"
+            data-aos-delay="500"
+            data-aos-duration="1500"
+            className="md:w-1/2"
+          >
             <Truck className="w-24 h-24 text-[#641717] mb-4" strokeWidth={1} />
             <h2 className="text-3xl font-bold mb-4 text-customDarkRed">
               Aggreegates Transport Solutions (Trucking)
@@ -97,7 +112,12 @@ const OtherServices = () => {
               materials, ensuring timely delivery to your project sites.
             </p>
           </div>
-          <div className="md:w-1/2 space-y-2">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="1500"
+            className="md:w-1/2 space-y-2"
+          >
             <PhotoProvider speed={() => 200}>
               <PhotoView src="/used_other_services/Picture 6.png">
                 <img
@@ -148,7 +168,12 @@ const OtherServices = () => {
           id="rental"
           className="flex flex-col md:flex-row items-center gap-8"
         >
-          <div className="md:w-1/2">
+          <div
+            data-aos="fade-right"
+            data-aos-delay="500"
+            data-aos-duration="1500"
+            className="md:w-1/2"
+          >
             <Tractor
               className="w-24 h-24 text-[#641717] mb-4"
               strokeWidth={1}
@@ -163,7 +188,12 @@ const OtherServices = () => {
               flexible rental options to meet your project needs.
             </p>
           </div>
-          <div className="md:w-1/2 space-y-2">
+          <div
+            data-aos="fade-up"
+            data-aos-delay="500"
+            data-aos-duration="1500"
+            className="md:w-1/2 space-y-2"
+          >
             <PhotoProvider speed={() => 200}>
               <PhotoView src="/used_other_services/Rental.jpg">
                 <img

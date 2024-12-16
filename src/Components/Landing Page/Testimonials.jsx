@@ -30,12 +30,16 @@ const Testimonials = () => {
       >
         <SwiperSlide>
           <div className="w-full max-w-6xl mx-auto grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Testimonial />
-            <Testimonial />
-            <Testimonial />
-            <Testimonial />
-            <Testimonial />
-            <Testimonial />
+            {Array.from({ length: 6 }).map((_, index) => (
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay={index * 100}
+                key={index}
+              >
+                <Testimonial />
+              </div>
+            ))}
           </div>
         </SwiperSlide>
         <SwiperSlide>

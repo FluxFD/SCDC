@@ -72,12 +72,16 @@ function Home() {
       <AboutUs />
 
       <section className="text-center text-white w-full sm:h-[50vh] px-4 py-16 lg:p-10 flex flex-col items-center justify-center gap-16 bg-[#5a0707]">
-        <h2 className="text-4xl font-bold">
+        <h2 data-aos="fade-up" className="text-4xl font-bold">
           With Over 15 Years of Building Trust and Excellence
         </h2>
 
         <div className="flex flex-wrap items-center justify-center gap-8">
-          <div className="w-[17rem] h-[10rem] text-center flex flex-col items-center justify-center gap-2 p-6 bg-white  ">
+          <div
+            data-aos="fade-up-right"
+            data-aos-duration="1000"
+            className="w-[17rem] h-[10rem] text-center flex flex-col items-center justify-center gap-2 p-6 bg-white  "
+          >
             <p className="text-5xl font-extrabold ml-4 text-black">
               <CountUp
                 start={0}
@@ -92,7 +96,11 @@ function Home() {
             </p>
           </div>
 
-          <div className="relative w-[17rem] h-[10rem] text-center flex flex-col items-center justify-center gap-2 p-6 bg-white  ">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className="relative w-[17rem] h-[10rem] text-center flex flex-col items-center justify-center gap-2 p-6 bg-white  "
+          >
             <p className="text-5xl font-extrabold text-black">
               <CountUp
                 start={0}
@@ -106,7 +114,11 @@ function Home() {
             </p>
           </div>
 
-          <div className="w-[17rem] h-[10rem] text-center flex flex-col items-center justify-center gap-2 p-6 bg-white  ">
+          <div
+            data-aos="fade-up-left"
+            data-aos-duration="1000"
+            className="w-[17rem] h-[10rem] text-center flex flex-col items-center justify-center gap-2 p-6 bg-white  "
+          >
             <p className="text-5xl font-extrabold text-black">
               <CountUp
                 start={0}
@@ -131,7 +143,11 @@ function Home() {
           <h2 className="text-4xl font-bold">Other Services</h2>
         </div>
 
-        <div className="w-full max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-center sm:gap-16 mt-10">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          className="w-full max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-center sm:gap-16 mt-10"
+        >
           <a href="/other-services#">
             <div className="min-w-[13rem] p-6 text-center text-lg font-semibold flex flex-col items-center justify-between gap-4 rounded-xl">
               {/* <img

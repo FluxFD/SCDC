@@ -8,7 +8,7 @@ const AboutUs = () => {
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div className="flex flex-col justify-center gap-6">
           <p className="text-4xl font-extrabold text-customOrange">About Us</p>
-          <p className="text-lg sm:max-w-[90%] ">
+          <p data-aos="fade-right" className="text-lg sm:max-w-[90%] ">
             SCDC is dedicated to adapting innovative construction methods and
             sustainable practices, aiming to set new standards in the industry.
             The company&apos;s goal is to exceed expectations on every project,
@@ -16,7 +16,11 @@ const AboutUs = () => {
             development across communities. This strategic focus positions SCDC
             as a forward-thinking leader in the construction sector.
           </p>
-          <a href="/about" className="w-full max-w-[9rem]">
+          <a
+            data-aos="fade-right"
+            href="/about"
+            className="w-full max-w-[9rem]"
+          >
             <button className="italic px-4 py-2 font-bold bg-customOrange hover:bg-customOrange/90 text-black rounded-lg">
               Learn More
             </button>
@@ -27,6 +31,7 @@ const AboutUs = () => {
           <PhotoView src="https://firebasestorage.googleapis.com/v0/b/connectifylocal-299a6.appspot.com/o/photos%2FDSC06100.jpg?alt=media&token=1fa579c5-edbb-48a5-a723-a804cf8e2d37">
             <img
               loading="lazy"
+              data-aos="fade-left"
               src="https://firebasestorage.googleapis.com/v0/b/connectifylocal-299a6.appspot.com/o/photos%2FDSC06100.jpg?alt=media&token=1fa579c5-edbb-48a5-a723-a804cf8e2d37"
               alt="Grid 1"
               className="aspect-video object-cover object-top rounded-2xl"
