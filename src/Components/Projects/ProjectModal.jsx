@@ -48,6 +48,7 @@ const ProjectModal = ({ project, onClose }) => {
             {imagesLength === 1 ? (
               <PhotoView src={project.images[0]}>
                 <img
+                  loading="lazy"
                   src={project.images[0]}
                   alt={project.title}
                   className="object-cover max-h-96 w-full rounded-lg"
@@ -59,6 +60,7 @@ const ProjectModal = ({ project, onClose }) => {
                   <PhotoView src={img} key={img}>
                     <div className="sm:col-span-4 ">
                       <img
+                        loading="lazy"
                         src={img}
                         alt={project.title}
                         className="object-cover max-h-64 w-full min-h-[250px] rounded-lg"

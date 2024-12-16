@@ -13,8 +13,16 @@ import Footer from "./Components/Footer";
 import "react-photo-view/dist/react-photo-view.css";
 import Projects from "./Pages/Projects";
 import Contact from "./Pages/Contact";
+import OtherServices from "./Pages/OtherServices";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <>
       <main
@@ -33,6 +41,7 @@ function App() {
             <Route path="/careers" element={<Careers />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact-us" element={<Contact />} />
+            <Route path="/other-services" element={<OtherServices />} />
           </Routes>
           <Footer />
         </Router>

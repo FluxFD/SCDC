@@ -222,12 +222,18 @@ const Projects = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {projects
                 .filter((project) => project.category === category)
-                .map((project) => (
-                  <ProjectBox
+                .map((project, index) => (
+                  <div
+                    data-aos="fade-up"
+                    data-aos-duration="1500"
+                    data-aos-delay={index * 100}
                     key={project.id}
-                    project={project}
-                    onClick={() => setSelectedProject(project)}
-                  />
+                  >
+                    <ProjectBox
+                      project={project}
+                      onClick={() => setSelectedProject(project)}
+                    />
+                  </div>
                 ))}
             </div>
           </div>
