@@ -3,7 +3,7 @@ const AboutTeam = () => {
     <div className="flex items-center justify-center">
       <div className="container w-full md:w-10/12">
         <div className="text-white flex flex-col md:flex-row justify-center items-center p-5">
-          <div className="md:w-1/2 p-4 text-justify">
+          <div className="md:w-1/2 p-4 ">
             <div className="text-center">
               <div className="font-extrabold text-5xl">
                 <h1>OUR TEAM</h1>
@@ -13,7 +13,7 @@ const AboutTeam = () => {
               </div>
             </div>
 
-            <div className="max-w-xl mx-auto p-8 lg:text-2xl text-xl">
+            <div className="max-w-xl mx-auto p-6 lg:text-2xl text-xl">
               <p>
                 At SCDC, we believe that our greatest asset is our people. It’s
                 the dedication, expertise, and unwavering commitment of our team

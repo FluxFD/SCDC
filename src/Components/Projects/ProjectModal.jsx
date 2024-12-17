@@ -5,7 +5,7 @@ const ProjectModal = ({ project, onClose }) => {
   const imagesLength = project?.images?.length;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+    <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center p-4 z-50">
       <div
         className={`${
           imagesLength === 1 ? "max-w-4xl" : "max-w-7xl"
@@ -18,8 +18,8 @@ const ProjectModal = ({ project, onClose }) => {
           <IoMdClose className="text-xl" />
         </div>
 
-        <div className="space-y-8 p-4 sm:p-6 h-full sm:max-h-[92vh] overflow-auto overflow-x-hidden">
-          <div>
+        <div className="flex flex-col sm:flex-row-reverse gap-6 p-4 sm:p-6 h-full sm:max-h-[92vh] overflow-auto overflow-x-hidden">
+          <div className="md:w-1/2">
             <h2 className="text-2xl font-bold mb-2 text-customDarkRed">
               {project.title}
             </h2>
@@ -51,19 +51,19 @@ const ProjectModal = ({ project, onClose }) => {
                   loading="lazy"
                   src={project.images[0]}
                   alt={project.title}
-                  className="object-cover max-h-96 w-full rounded-lg"
+                  className="object-cover max-h-96 md:w-1/2 rounded-lg"
                 />
               </PhotoView>
             ) : (
-              <div className={`grid sm:grid-cols-12 gap-4`}>
+              <div className={`md:w-1/2 grid sm:grid-cols-12 gap-2`}>
                 {project?.images?.map((img) => (
                   <PhotoView src={img} key={img}>
-                    <div className="sm:col-span-4 ">
+                    <div className="sm:col-span-6 ">
                       <img
                         loading="lazy"
                         src={img}
                         alt={project.title}
-                        className="object-cover max-h-64 w-full min-h-[250px] rounded-lg"
+                        className="object-cover max-h-52 w-full h-full rounded-lg"
                       />
                     </div>
                   </PhotoView>

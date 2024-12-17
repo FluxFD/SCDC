@@ -22,25 +22,25 @@ const LogoContainer = () => {
     <>
       <img
         loading="lazy"
-        src="./clients/6VFWZXRTBVBXEND6WA7U-588010d1.jpg"
+        src="./clients/6VFWZXRTBVBXEND6WA7U-588010d1.png"
         alt="Brand"
         className="h-[5rem] aspect-video object-contain"
       />
       <img
         loading="lazy"
-        src="./clients/301152490_546812180581350_7393387599569379120_n.jpg"
+        src="./clients/301152490_546812180581350_7393387599569379120_n.png"
         alt="Brand"
         className="h-[5rem] aspect-video object-contain"
       />
       <img
         loading="lazy"
-        src="./clients/446934495_854520850026572_6034645225647009183_n.jpg"
+        src="./clients/446934495_854520850026572_6034645225647009183_n.png"
         alt="Brand"
         className="h-[5rem] aspect-video object-contain"
       />
       <img
         loading="lazy"
-        src="./clients/1711076320276.jpg"
+        src="./clients/1711076320276.png"
         alt="Brand"
         className="h-[5rem] aspect-video object-contain"
       />
@@ -52,7 +52,7 @@ const LogoContainer = () => {
       />
       <img
         loading="lazy"
-        src="./clients/aboitiz-infracapital-logo.jpg"
+        src="./clients/aboitiz-infracapital-logo.png"
         alt="Brand"
         className="h-[5rem] aspect-video object-contain"
       />
@@ -76,7 +76,7 @@ const LogoContainer = () => {
       />
       <img
         loading="lazy"
-        src="./clients/zuellig_therapeutics_cover.jpg"
+        src="./clients/zuellig_therapeutics_cover.png"
         alt="Brand"
         className="h-[5rem] aspect-video object-contain"
       />

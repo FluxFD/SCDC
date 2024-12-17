@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { TreesIcon as Tree, Truck, Tractor } from "lucide-react";
 import { PhotoProvider, PhotoView } from "react-photo-view";
+import { useLocation } from "react-router-dom";
 
 const OtherServices = () => {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const targetElement = document.getElementById(hash.substring(1));
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [hash]);
+
   return (
     <div className="w-full min-h-screen flex flex-col font-inter pt-[64px] lg:pt-[80px]">
       <div
@@ -20,7 +32,7 @@ const OtherServices = () => {
 
       <main className="max-w-7xl mx-auto px-4 py-16 space-y-20 sm:space-y-28">
         <section className="relative flex flex-col md:flex-row items-center gap-8">
-          <div id="landscaping" className="absolute -top-16 "></div>
+          <div id="landscaping" className="absolute -top-[10rem] "></div>
 
           <div
             data-aos="fade-right"

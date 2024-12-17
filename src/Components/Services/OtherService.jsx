@@ -26,8 +26,8 @@ const OtherService = () => {
         {items.map((item, index) => (
           <div
             key={index}
-            className="w-full px-6 md:border-r border-white cursor-pointer last:border-r-0"
-            onClick={() => setModalContent(item)}
+            className="w-full px-6 md:border-r border-white last:border-r-0"
+            // onClick={() => setModalContent(item)}
           >
             <img
               src={item.imageUrl}
