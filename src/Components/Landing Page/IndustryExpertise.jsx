@@ -10,16 +10,16 @@ const IndustryExpertise = () => {
 
   return (
     <section style={{
-      backgroundImage: "linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3)), url('/bgused.png')",
+      backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/bgused.png')",
       backgroundSize: "cover",
       backgroundPosition: "center",
     }} className="text-customDarkRed w-full px-4 py-20 lg:p-20 flex flex-col items-center justify-center gap-16 bg-customLightgray">
       
       <div className="space-y-6 text-center">
-        <h2 className="text-5xl font-bold text-[#3d444d] ">
+        <h2 className="text-5xl font-bold text-white ">
           Industry Expertise
         </h2>
-        <p className="text-black max-w-5xl text-2xl text-center">
+        <p className="text-white max-w-5xl text-2xl text-center">
           SCDC is a comprehensive construction and infrastructure solutions
           provider
         </p>
