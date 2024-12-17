@@ -74,7 +74,7 @@ const IndustryExpertise = () => {
             <div className="relative w-full max-w-3xl mx-auto ">
               <img
                 loading="lazy"
-                src="/used_landing_page/used_industry_expertise/Picture 2.jpg"
+                src="/used_landing_page/used_industry_expertise/d5c30235-4610-4e99-8f13-cd34fa5606f4.jpg"
                 alt=""
                 className="object-cover aspect-video h-full w-full"
               />

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { PhotoProvider, PhotoView } from "react-photo-view";
 
 const IndustyExpertiseImages = () => {
   const [modalContent, setModalContent] = useState(null);
@@ -10,19 +11,23 @@ const IndustyExpertiseImages = () => {
       title: "Pre - Construction",
       description:
         "Providing essential planning, design, and budgeting services to ensure successful project initiation.",
-      imageUrl: "/used_services/Pre_construction.png",
+      imageUrl: ["/used_services/Pre_construction.png"],
     },
     {
       title: "General Construction",
       description:
         "Delivering high-quality construction services for residential, commercial, and industrial projects.",
-      imageUrl: "/used_services/General_construction.jpg",
+      imageUrl: [
+        "/used_services/d5c30235-4610-4e99-8f13-cd34fa5606f4.jpg",
+        "/used_services/e3915132-1be4-4bca-a5dc-fe71d0f0ce69.jpg",
+        "/used_services/b016ea36-6145-4a6b-a27a-9e8baf721afd.jpg",
+      ],
     },
     {
       title: "Construction Management",
       description:
         "Overseeing and managing construction processes to ensure efficiency, safety, and timely completion.",
-      imageUrl: "/used_services/Construction_management.jpg",
+      imageUrl: ["/used_services/Construction_management.jpg"],
     },
   ];
 
@@ -33,14 +38,22 @@ const IndustyExpertiseImages = () => {
         {items.map((item, index) => (
           <div
             key={index}
-            className="w-full px-6 md:border-r border-gray-400 cursor-pointer last:border-r-0"
-            onClick={() => setModalContent(item)}
+            className="w-full px-6 md:border-r border-gray-400 last:border-r-0"
+            // onClick={() => setModalContent(item)}
           >
-            <img
-              src={item.imageUrl}
-              alt={item.title}
-              className="w-full h-48 aspect-video object-cover rounded-lg shadow-md mt-2"
-            />
+            <PhotoProvider speed={() => 200}>
+              <PhotoView src={item.imageUrl?.[0]}>
+                <img
+                  src={item.imageUrl?.[0]}
+                  alt={item.title}
+                  className="w-full h-48 aspect-video object-cover rounded-lg shadow-md mt-2"
+                />
+              </PhotoView>
+              {item.imageUrl?.length > 1 &&
+                item?.imageUrl
+                  ?.slice(1)
+                  ?.map((img) => <PhotoView src={img}></PhotoView>)}
+            </PhotoProvider>
             <div className="space-y-2 mt-2">
               <p className="text-lg md:text-xl font-bold">{item.title}</p>
               <div className="text-wrap px-4">
@@ -63,7 +76,7 @@ const IndustyExpertiseImages = () => {
               </button>
             </div>
             <img
-              src={modalContent.imageUrl}
+              src={modalContent.imageUrl?.[0]}
               alt={modalContent.title}
               className="w-full h-auto aspect-video object-cover rounded-lg mb-4"
             />

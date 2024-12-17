@@ -10,6 +10,14 @@ const NAV_LINKS = [
   {
     title: "Services",
     href: "/services",
+    dropdownItems: [
+      { title: "Landscape Solution", href: "/other-services#landscaping" },
+      {
+        title: "Aggregates Transport Solutions (Trucking)",
+        href: "/other-services#trucking",
+      },
+      { title: "Rental of Equipment", href: "/other-services#rental" },
+    ],
   },
   {
     title: "Projects",
@@ -23,18 +31,18 @@ const NAV_LINKS = [
     title: "Careers",
     href: "/careers",
   },
-  {
-    title: "Other Services",
-    href: "#other-services",
-    dropdownItems: [
-      { title: "Landscape Solution", href: "/other-services#" },
-      {
-        title: "Aggregates Transport Solutions (Trucking)",
-        href: "/other-services#trucking",
-      },
-      { title: "Rental of Equipment", href: "/other-services#rental" },
-    ],
-  },
+  // {
+  //   title: "Other Services",
+  //   href: "#other-services",
+  //   dropdownItems: [
+  //     { title: "Landscape Solution", href: "/other-services#landscaping" },
+  //     {
+  //       title: "Aggregates Transport Solutions (Trucking)",
+  //       href: "/other-services#trucking",
+  //     },
+  //     { title: "Rental of Equipment", href: "/other-services#rental" },
+  //   ],
+  // },
   {
     title: "Contacts",
     href: "/contact-us",

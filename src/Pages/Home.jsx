@@ -10,10 +10,22 @@ import SwiperCore, { Autoplay } from "swiper";
 import IndustryExpertise from "../Components/Landing Page/IndustryExpertise";
 import CountUp from "react-countup";
 import { Tractor, TreesIcon, Truck } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 SwiperCore.use([Autoplay]);
 
 function Home() {
+  const { hash } = useLocation();
+
+  useEffect(() => {
+    if (hash) {
+      const targetElement = document.getElementById(hash.substring(1));
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [hash]);
+
   return (
     <div className="w-full min-h-screen flex flex-col font-inter pt-[64px] lg:pt-[80px]">
       <section className="relative w-full h-[40vh] sm:h-[calc(100vh-80px)]">
@@ -58,7 +70,7 @@ function Home() {
           <SwiperSlide
             className="w-full h-full bg-cover bg-center flex items-center p-6 sm:p-16"
             style={{
-              backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url('/used_landing_page/DJI_0292.jpg')`,
+              backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url('/used_landing_page/DJI_0281.jpg')`,
             }}
           >
             <div className="space-y-4 tracking-wide text-4xl sm:text-5xl md:text-7xl font-bold text-white">
@@ -148,7 +160,7 @@ function Home() {
           data-aos-duration="1000"
           className="w-full max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-center sm:gap-16 mt-10"
         >
-          <a href="/other-services#">
+          <Link to="/other-services#landscaping">
             <div className="min-w-[13rem] p-6 text-center text-lg font-semibold flex flex-col items-center justify-between gap-4 rounded-xl">
               {/* <img
                 src="/used_landing_page/used_other_services/picture 1.png"
@@ -160,9 +172,9 @@ function Home() {
                 Solution
               </p>
             </div>
-          </a>
+          </Link>
 
-          <a href="/other-services#trucking">
+          <Link to="/other-services#trucking">
             <div className="min-w-[13rem] p-6 text-center text-lg font-semibold flex flex-col items-center justify-between gap-4 rounded-xl">
               {/* <img
                 src="/used_landing_page/used_other_services/picture 2.png"
@@ -174,9 +186,9 @@ function Home() {
                 Solutions (Trucking)
               </p>
             </div>
-          </a>
+          </Link>
 
-          <a href="/other-services#rental">
+          <Link to="/other-services#rental">
             <div className="mb-6 min-w-[13rem] p-6 text-center text-lg font-semibold flex flex-col items-center justify-between gap-4 rounded-xl">
               {/* <img
                 src="/used_landing_page/used_other_services/picture 3.png"
@@ -185,7 +197,7 @@ function Home() {
               <Tractor className="size-24 text-white" strokeWidth={1} />
               <p>Rental of Equipment</p>
             </div>
-          </a>
+          </Link>
         </div>
       </section>
 

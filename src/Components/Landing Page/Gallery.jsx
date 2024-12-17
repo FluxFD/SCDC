@@ -168,7 +168,7 @@ const Gallery = () => {
       </PhotoProvider>
 
       <a
-        href="/gallery"
+        href="/about"
         className="italic text-center w-full max-w-[9rem] px-4 py-2 font-bold bg-customOrange hover:bg-customOrange/90 text-black rounded-full"
       >
         See All
