@@ -43,17 +43,17 @@ const IndustryExpertise = () => {
               data-aos="zoom-in"
               data-aos-duration="2000"
               onClick={() => swiperRef.current?.swiper.slidePrev()}
-              className="size-12 sm:size-16 rounded-full border-4 border-customOrange flex justify-center items-center cursor-pointer transform transition-transform duration-200 hover:scale-105 active:scale-100"
+              className="size-12 sm:size-16 rounded-full border-4 border-[#ffda38] flex justify-center items-center cursor-pointer transform transition-transform duration-200 hover:scale-105 active:scale-100"
             >
-              <FaArrowLeft className="size-6 sm:size-9 text-customOrange" />
+              <FaArrowLeft className="size-6 sm:size-9 text-[#ffda38]" />
             </div>
             <div
               data-aos="zoom-in"
               data-aos-duration="2000"
               onClick={() => swiperRef.current?.swiper.slideNext()}
-              className="size-12 sm:size-16 rounded-full border-4 border-customOrange flex justify-center items-center cursor-pointer transform transition-transform duration-200 hover:scale-105 active:scale-100"
+              className="size-12 sm:size-16 rounded-full border-4 border-[#ffda38] flex justify-center items-center cursor-pointer transform transition-transform duration-200 hover:scale-105 active:scale-100"
             >
-              <FaArrowRight className="size-6 sm:size-9 text-customOrange" />
+              <FaArrowRight className="size-6 sm:size-9 text-[#ffda38]" />
             </div>
           </div>
         </div>

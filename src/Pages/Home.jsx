@@ -162,10 +162,6 @@ function Home() {
         >
           <Link to="/other-services#landscaping">
             <div className="min-w-[13rem] p-6 text-center text-lg font-semibold flex flex-col items-center justify-between gap-4 rounded-xl ">
-              {/* <img
-                src="/used_landing_page/used_other_services/picture 1.png"
-                alt=""
-              /> */}
               <TreesIcon className="size-24 text-white" strokeWidth={1} />
               <p>
                 Landscape <br />
