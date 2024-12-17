@@ -66,8 +66,7 @@ const Contact = () => {
               <div className="flex gap-4">
                 <FaLocationDot className="size-6 text-customOrange" />
                 <p>
-                  Address: 5930 San Luis Compound National Highway Brgy.
-                  Patimbao Sta. Cruz, Laguna 4009 Lima office
+                  Lot 7 Blk 6 Campo Verde Subd. Malvar, Batangas
                 </p>
               </div>
 
