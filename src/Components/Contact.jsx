@@ -87,10 +87,10 @@ const Contact = () => {
                 </a>
               </div>
 
-              <div className="flex gap-4">
+              {/* <div className="flex gap-4">
                 <FaFacebook className="size-6 text-customOrange" />
                 <a href="mailto:sanluiscdc@gmail.com">----</a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

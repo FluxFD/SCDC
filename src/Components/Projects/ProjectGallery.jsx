@@ -1,24 +1,10 @@
 import React from "react";
 import { PhotoProvider, PhotoView } from "react-photo-view";
-import { Link } from "react-router-dom";
 
-const Gallery = () => {
+const ProjectGallery = () => {
   return (
-    <section className="relative text-customDarkRed w-full py-12 lg:py-20 flex flex-col items-center justify-center gap-8 sm:gap-16">
+    <section className="relative text-customDarkRed w-full py-12  lg:py-20 flex flex-col items-center justify-center gap-8 sm:gap-16">
       <div id="gallery" className="absolute -top-16 "></div>
-
-      <div data-aos-duration="1000" className="space-y-6 text-center">
-        <h2 className="text-4xl font-bold text-customDarkRed ">
-          Our Work in Action
-        </h2>
-        <p className="text-black max-w-5xl text-lg text-center">
-          Explore our gallery to see the quality craftsmanship and diverse
-          projects we've completed. From small-scale builds to large
-          developments, each image showcases our dedication to excellence and
-          attention to detail.
-        </p>
-      </div>
-
       <PhotoProvider speed={() => 200}>
         <div
           data-aos="fade-up"
@@ -167,14 +153,8 @@ const Gallery = () => {
         </div>
       </PhotoProvider>
 
-      <a
-        href="/projects#gallery"
-        className="italic text-center w-full max-w-[9rem] px-4 py-2 font-bold bg-customOrange hover:bg-customOrange/90 text-black rounded-full"
-      >
-        See All
-      </a>
     </section>
   );
 };
 
-export default Gallery;
+export default ProjectGallery;

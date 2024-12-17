@@ -158,10 +158,10 @@ function Home() {
         <div
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="w-full max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-center sm:gap-16 mt-10"
+          className="w-full max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-center sm:gap-24 mt-10"
         >
           <Link to="/other-services#landscaping">
-            <div className="min-w-[13rem] p-6 text-center text-lg font-semibold flex flex-col items-center justify-between gap-4 rounded-xl">
+            <div className="min-w-[13rem] p-6 text-center text-lg font-semibold flex flex-col items-center justify-between gap-4 rounded-xl ">
               {/* <img
                 src="/used_landing_page/used_other_services/picture 1.png"
                 alt=""

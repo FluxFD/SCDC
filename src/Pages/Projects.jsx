@@ -3,8 +3,11 @@ import ProjectBox from "../Components/Projects/ProjectBox";
 import ProjectModal from "../Components/Projects/ProjectModal";
 import { IoCaretDownSharp } from "react-icons/io5";
 import Contact from "../Components/Contact";
+import ProjectGallery from "../Components/Projects/ProjectGallery";
+import { useLocation } from "react-router-dom";
 
 export const projects = [
+  
   // Residential projects
   {
     id: "1",
@@ -196,7 +199,16 @@ export const projects = [
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const categories = ["Residential", "Commercial", "Industrial", "Landscaping"];
+  const { hash } = useLocation();
 
+  useEffect(() => {
+    if (hash) {
+      const targetElement = document.getElementById(hash.substring(1));
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [hash]);
   // Disable scrolling when a project is selected
   useEffect(() => {
     if (selectedProject) {
@@ -238,7 +250,10 @@ const Projects = () => {
             </div>
           </div>
         ))}
-
+        <hr/>
+        <div id="gallery">
+          <ProjectGallery  />
+          </div>
         {selectedProject && (
           <ProjectModal
             project={selectedProject}

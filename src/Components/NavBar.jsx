@@ -11,12 +11,12 @@ const NAV_LINKS = [
     title: "Services",
     href: "/services",
     dropdownItems: [
-      { title: "Landscape Solution", href: "/other-services#landscaping" },
-      {
-        title: "Aggregates Transport Solutions (Trucking)",
-        href: "/other-services#trucking",
-      },
-      { title: "Rental of Equipment", href: "/other-services#rental" },
+      { title: "Other-Services", href: "/other-services" },
+      // {
+      //   title: "Aggregates Transport Solutions (Trucking)",
+      //   href: "/other-services#trucking",
+      // },
+      // { title: "Rental of Equipment", href: "/other-services#rental" },
     ],
   },
   {
@@ -85,7 +85,7 @@ const Navbar = () => {
                   {link.dropdownItems.map((item, itemIndex) => (
                     <li
                       key={itemIndex}
-                      className="bg-customDarkGray hover:bg-customDarkGray/95"
+                      className="bg-customDarkGray hover:bg-customDarkGray/95 mt-3"
                     >
                       <a
                         href={item.href}
