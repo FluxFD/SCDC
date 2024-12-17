@@ -57,9 +57,9 @@ const Contact = () => {
 
           <div className="sm:ml-6 space-y-8 lg:space-y-16">
             <div className="text-lg sm:text-2xl font-extrabold italic space-y-2 sm:space-y-4">
-              <p>We work with passion and love</p>
-              <p>We deliver quality service</p>
-              <p>We prioritize your needs</p>
+              <p>We build with Passion</p>
+              <p>Plan with Precision </p>
+              <p>Deliver with Excellece.</p>
             </div>
 
             <div className="text-start space-y-4 max-w-lg italic text-lg text-customLightgray">
@@ -67,7 +67,7 @@ const Contact = () => {
                 <FaLocationDot className="size-6 text-customOrange" />
                 <p>
                   Address: 5930 San Luis Compound National Highway Brgy.
-                  Patimbao Sta. Cruz, Laguna 4009
+                  Patimbao Sta. Cruz, Laguna 4009 Lima office
                 </p>
               </div>
 
@@ -76,8 +76,7 @@ const Contact = () => {
                 <div className="flex gap-2">
                   <p>Contact:</p>
                   <div>
-                    <p>+63 917-527-2658</p>
-                    <p>+63 917-529-2654</p>
+                    <p>+63 910-310-4127</p>
                   </div>
                 </div>
               </div>
