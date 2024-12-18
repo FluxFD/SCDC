@@ -13,7 +13,7 @@ const AboutTeam = () => {
               </div>
             </div>
 
-            <div className="max-w-xl mx-auto p-6 lg:text-2xl text-xl">
+            <div className="text-justify max-w-xl mx-auto p-6 lg:text-2xl text-xl">
               <p>
                 At SCDC, we believe that our greatest asset is our people. It’s
                 the dedication, expertise, and unwavering commitment of our team
@@ -29,8 +29,7 @@ const AboutTeam = () => {
               <p className="mt-5">
                 We value open communication, mutual respect, and a supportive
                 work environment. We invest in our employees&apos; professional
-                development, offering opportunities for training and
-                advancement.
+                development, offering opportunities for training and advancement.
               </p>
             </div>
           </div>
