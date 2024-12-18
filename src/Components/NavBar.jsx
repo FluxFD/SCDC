@@ -20,13 +20,13 @@ const NAV_LINKS = [
     ],
   },
   {
-    title: "Projects",
+    title: " Our Projects",
     href: "/projects",
   },
-  {
-    title: "Gallery",
-    href: "/#gallery",
-  },
+  // {
+  //   title: "Gallery",
+  //   href: "/#gallery",
+  // },
   {
     title: "Careers",
     href: "/careers",
