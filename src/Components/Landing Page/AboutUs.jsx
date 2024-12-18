@@ -8,7 +8,7 @@ const AboutUs = () => {
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
         <div className="flex flex-col justify-center gap-6">
           <p className="text-4xl font-extrabold text-customOrange">About Us</p>
-          <p data-aos="fade-right" className="text-lg sm:max-w-[90%] ">
+          <p data-aos="fade-right" className="text-justify text-lg sm:max-w-[90%] ">
             SCDC is dedicated to adapting innovative construction methods and
             sustainable practices, aiming to set new standards in the industry.
             The company&apos;s goal is to exceed expectations on every project,
