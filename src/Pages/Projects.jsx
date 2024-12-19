@@ -19,6 +19,7 @@ export const projects = [
       "/used_projects/RESIDENTIAL/SEAFRONT.jpg",
     ],
     description: "Luxurious beachfront apartments with panoramic ocean views.",
+    scopeOfWork: "Land Development, Housing, Basketball Court, Weekend Market",
     location: "Coastal City",
     area: "10,000 sqm",
     status: "Completed",
@@ -34,6 +35,7 @@ export const projects = [
     ],
     description:
       "A master-planned community with modern amenities and green spaces.",
+    scopeOfWork: "The Villages at Lipa",
     location: "Lipa City",
     area: "50,000 sqm",
     status: "Ongoing",
@@ -44,6 +46,7 @@ export const projects = [
     category: "Residential",
     images: ["/used_projects/RESIDENTIAL/Ajoya.png"],
     description: "Contemporary homes designed for comfort and style.",
+    scopeOfWork: "Exterior Works, Maintenance",
     location: "Suburban Area",
     area: "15,000 sqm",
     status: "Completed",
@@ -59,6 +62,7 @@ export const projects = [
       "/used_projects/COMMERCIAL/BATANGAS LAKELANDS/Picture 2.jpg",
     ],
     description: "A mixed-use development featuring retail spaces and offices.",
+    scopeOfWork: "Land Development",
     location: "Batangas",
     area: "30,000 sqm",
     status: "In Planning",
@@ -76,6 +80,7 @@ export const projects = [
       "/used_projects/COMMERCIAL/THE OUTLETS AT LIPA/DJI_0304.jpg",
     ],
     description: "A premier outlet shopping destination with various brands.",
+    scopeOfWork: "Land Development, Exterior Improvement",
     location: "Lipa City",
     area: "25,000 sqm",
     status: "Completed",
@@ -92,6 +97,7 @@ export const projects = [
       "/used_projects/COMMERCIAL/LIMA COMMERCIAL LOTS/lima tower one outside parking eco pavers installation/Picture 2.jpg",
     ],
     description: "A state-of-the-art business park with modern office spaces.",
+    scopeOfWork: "Land Development Road Expansion, Lima Tower One Parking",
     location: "Lima",
     area: "40,000 sqm",
     status: "Ongoing",
@@ -104,17 +110,19 @@ export const projects = [
     images: ["/used_projects/INDUSTRIAL/East Bay WTP Project.jpg"],
     description:
       "State-of-the-art water treatment facility serving the East Bay area with modern purification systems.",
+    scopeOfWork: "200 Million Liters Water Tank, Sludge Building, Pumping Station, Land Development",
     location: "East Bay",
     area: "20,000 sqm",
     status: "Operational",
   },
   {
     id: "9",
-    title: "Embankment of Filling Materials",
+    title: "Canon",
     category: "Industrial",
     images: ["/used_projects/INDUSTRIAL/Embankment of Filling Materials.jpg"],
     description:
       "Advanced materials processing and storage facility with modern equipment and efficient logistics.",
+    scopeOfWork: "Embankment of Filling Materials",
     location: "Industrial Zone",
     area: "15,000 sqm",
     status: "Operational",
@@ -126,6 +134,7 @@ export const projects = [
     images: ["/used_projects/INDUSTRIAL/LIMA ESTATE.jpg"],
     description:
       "Premium industrial estate featuring modern facilities and strategic location for businesses.",
+    scopeOfWork: "Land Development, Construction",
     location: "Lima Technology Center",
     area: "45,000 sqm",
     status: "Operational",
@@ -142,6 +151,7 @@ export const projects = [
     ],
     description:
       "Expertly designed and maintained commercial landscapes with sustainable features.",
+    scopeOfWork: "Property Landscape Maintenance",
     location: "Lima Commercial Area",
     area: "5,000 sqm",
     status: "Ongoing Maintenance",
@@ -160,6 +170,7 @@ export const projects = [
     ],
     description:
       "Beautiful retail environment with seasonal gardens and decorative elements.",
+    scopeOfWork: "Outlets Hardscape and Softscape, Landscape Maintenance",
     location: "Lipa City",
     area: "3,000 sqm",
     status: "Ongoing Maintenance",
@@ -175,6 +186,7 @@ export const projects = [
     ],
     description:
       "Coastal-inspired landscape design with native plants and sustainable features.",
+    scopeOfWork: "Property Landscape Maintenance, Phase 1 Landscape",
     location: "Seafront Area",
     area: "4,000 sqm",
     status: "Ongoing Maintenance",
@@ -190,6 +202,7 @@ export const projects = [
     ],
     description:
       "Comprehensive landscape maintenance for residential communities with tropical elements.",
+    scopeOfWork: "Property Landscape Maintenance",
     location: "Lipa City",
     area: "6,000 sqm",
     status: "Ongoing Maintenance",

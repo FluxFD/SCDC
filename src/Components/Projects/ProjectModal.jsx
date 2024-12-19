@@ -24,6 +24,11 @@ const ProjectModal = ({ project, onClose }) => {
               {project.title}
             </h2>
             <p className="text-gray-600 mb-4">{project.description}</p>
+            <h3 className="font-semibold mb-1">Scope Of Work</h3>
+            <div>
+            <h3 className="text-gray-600 mb-5">{project.scopeOfWork}</h3>
+            </div>
+
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <h3 className="font-semibold">Location</h3>

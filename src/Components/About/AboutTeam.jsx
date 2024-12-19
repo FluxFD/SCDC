@@ -37,23 +37,23 @@ const AboutTeam = () => {
             <div className="max-w-xl mx-auto p-8">
               <div className="mb-5">
                 <img
-                  src="/used_about/Our_team_1.jpg"
+                  src="/used_about/Our_team_12.jpg"
                   alt="Team 1"
-                  className="h-auto w-96"
+                  className="h-auto w-96 rounded-lg"
                 />
               </div>
               <div className="mb-5">
                 <img
                   src="/used_about/Our_team_2.png"
                   alt="Team 2"
-                  className="h-auto w-96"
+                  className="h-auto w-96 rounded-lg"
                 />
               </div>
               <div>
                 <img
                   src="/used_about/Our_team_3.jpg"
                   alt="Team 3"
-                  className="h-auto w-96"
+                  className="h-auto w-96 rounded-lg"
                 />
               </div>
             </div>

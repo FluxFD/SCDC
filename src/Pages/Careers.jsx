@@ -20,7 +20,7 @@ const Careers = () => {
           backgroundPosition: "top center",
           backgroundSize: "cover",
         }}
-        className="w-full lg:h-[75vh] py-8 flex justify-center bg-cover bg-center"
+        className="w-full lg:h-[69vh] py-8 flex justify-center bg-cover bg-center"
       >
         <div className="w-full flex flex-col gap-8 text-center">
           <h1 className="text-xl lg:text-4xl text-[#f9b22b]">

@@ -19,6 +19,12 @@ const timelineData = [
       "Founded SL Human Resource  Management Services, subsidiary of Mey’s Landscaping focusing on manpower",
   },
   {
+    year: "2022",
+    image: "/used_about/2015.png",
+    description:
+      "SCDC Had the Privilege to Join the Lima Estate Phase 3 Groundbreaking Ceremony",
+  },
+  {
     year: "2020",
     image: "/used_about/2020.jpg",
     description:
@@ -26,7 +32,7 @@ const timelineData = [
   },
   {
     year: "2015",
-    image: "/used_about/2015.png",
+    image: "/used_about/pic123.png",
     description:
       "Had our first breakthrough; Major Land Development Project of Lima Land under Aboitiz Group",
   },
@@ -108,7 +114,7 @@ const AboutTimeline = () => {
             style={{
               width: "auto",
             }}
-            className="py-20"
+            className="py-20 font-bold italic"
           >
             <div className="timeline-item flex-none p-4 text-center w-64 sm:w-72 md:w-80 relative">
               {/* Timeline dot */}

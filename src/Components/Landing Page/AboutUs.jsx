@@ -28,11 +28,11 @@ const AboutUs = () => {
         </div>
 
         <PhotoProvider speed={() => 200}>
-          <PhotoView src="https://firebasestorage.googleapis.com/v0/b/connectifylocal-299a6.appspot.com/o/photos%2FDSC06100.jpg?alt=media&token=1fa579c5-edbb-48a5-a723-a804cf8e2d37">
+          <PhotoView src="/used_landing_page/Picture 4.jpg">
             <img
               loading="lazy"
               data-aos="fade-left"
-              src="https://firebasestorage.googleapis.com/v0/b/connectifylocal-299a6.appspot.com/o/photos%2FDSC06100.jpg?alt=media&token=1fa579c5-edbb-48a5-a723-a804cf8e2d37"
+              src="/used_landing_page/Picture 4.jpg"
               alt="Grid 1"
               className="aspect-video object-cover object-top rounded-2xl"
             />
