@@ -161,7 +161,7 @@ function Home() {
           className="w-full max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-center sm:gap-40"
         >
           <Link to="/other-services#landscaping">
-            <div className="min-w-[13rem] p-6 text-center text-lg font-semibold flex flex-col items-center justify-between gap-4 rounded-xl ">
+            <div className="min-w-[13rem] p-6 text-center text-lg font-semibold flex flex-col items-center justify-between gap-4 rounded-xl scale-on-hover mt-10">
               <TreesIcon className="size-24 text-white" strokeWidth={1} />
               <p>
                 Landscape <br />
@@ -171,7 +171,7 @@ function Home() {
           </Link>
 
           <Link to="/other-services#trucking">
-            <div className="min-w-[13rem] p-6 text-center text-lg font-semibold flex flex-col items-center justify-between gap-4 rounded-xl mt-10">
+            <div className="min-w-[13rem] p-6 text-center text-lg font-semibold flex flex-col items-center justify-between gap-4 rounded-xl mt-10 scale-on-hover">
               {/* <img
                 src="/used_landing_page/used_other_services/picture 2.png"
                 alt=""
@@ -185,7 +185,7 @@ function Home() {
           </Link>
 
           <Link to="/other-services#rental">
-            <div className="mb-6 min-w-[13rem] p-6 text-center text-lg font-semibold flex flex-col items-center justify-between gap-4 rounded-xl mt-10">
+            <div className="mb-6 min-w-[13rem] p-6 text-center text-lg font-semibold flex flex-col items-center justify-between gap-4 rounded-xl mt-10 scale-on-hover">
               {/* <img
                 src="/used_landing_page/used_other_services/picture 3.png"
                 alt=""
