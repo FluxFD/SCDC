@@ -15,7 +15,7 @@ const useApply = () => {
 
     const emailData = {
       to_name: "SCDC",
-      to_email: "sanluiscdc@gmail.com",
+      to_email: "sanluiscdc.inquiries@gmail.com",
       job_title: jobTitle,
       from_name: formData.name,
       reply_to: formData.email,

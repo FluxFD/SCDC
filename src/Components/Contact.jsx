@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaFacebook, FaPhoneAlt } from "react-icons/fa";
+import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import useEmail from "../hooks/useEmail";
@@ -11,6 +11,7 @@ const Contact = () => {
     fullName: "",
     email: "",
     message: "",
+    contactNo: "",
     termsAccepted: false,
   });
 
@@ -34,6 +35,7 @@ const Contact = () => {
       fullName: "",
       email: "",
       message: "",
+      contactNo: "",
       termsAccepted: false,
     });
   };
@@ -117,6 +119,15 @@ const Contact = () => {
                 onChange={handleChange}
                 className="w-full bg-white rounded-xl px-4 py-2 outline-none"
                 placeholder="Email Address"
+                required
+              />
+              <input
+                type="  "
+                name="contactNo"
+                value={formData.contactNo}
+                onChange={handleChange}
+                className="w-full bg-white rounded-xl px-4 py-2 outline-none"
+                placeholder="Contact Number"
                 required
               />
               <textarea

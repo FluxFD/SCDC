@@ -7,7 +7,7 @@ const useEmail = () => {
   const [statusMessage, setStatusMessage] = useState("");
 
   const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-  const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID_INQUIRIES;
   const userId = import.meta.env.VITE_EMAILJS_USER_ID;
 
   const sendEmail = (formData) => {
@@ -18,6 +18,7 @@ const useEmail = () => {
       from_name: formData.fullName,
       reply_to: formData.email,
       message: formData.message,
+      contact: formData.contactNo,
     };
 
     emailjs
