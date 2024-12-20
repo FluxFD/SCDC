@@ -1,22 +1,34 @@
-import { useState } from "react";
-
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 const OtherService = () => {
   const [modalContent, setModalContent] = useState(null);
+  const { hash } = useLocation();
 
+  useEffect(() => {
+    if (hash) {
+      const targetElement = document.getElementById(hash.substring(1));
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [hash]);
   const closeModal = () => setModalContent(null);
 
   const items = [
     {
       title: "Landscape Solution",
       imageUrl: "/used_services/Landscape_solution.jpg",
+      link:"/other-services#landscaping"
     },
     {
       title: "Aggregates Transport Solutions (Trucking)",
       imageUrl: "/used_services/Trucking.jpg",
+      link:"/other-services#trucking"
     },
     {
       title: "Rental of Equipment",
       imageUrl: "/used_services/Rental.jpg",
+      link:"/other-services#rental"
     },
   ];
 
@@ -24,9 +36,10 @@ const OtherService = () => {
     <>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-4 md:px-6">
         {items.map((item, index) => (
+          <Link to= {item.link}>
           <div
             key={index}
-            className="w-full px-6 md:border-r border-white last:border-r-0"
+            className="w-full px-6 md:border-r border-white last:border-r-0 scale-on-hover-trans"
             // onClick={() => setModalContent(item)}
           >
             <img
@@ -40,6 +53,7 @@ const OtherService = () => {
               </p>
             </div>
           </div>
+          </Link>
         ))}
       </div>
 
