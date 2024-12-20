@@ -158,7 +158,7 @@ function Home() {
         <div
           data-aos="fade-up"
           data-aos-duration="1000"
-          className="w-full max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-center sm:gap-24 mt-10"
+          className="w-full max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-center sm:gap-40"
         >
           <Link to="/other-services#landscaping">
             <div className="min-w-[13rem] p-6 text-center text-lg font-semibold flex flex-col items-center justify-between gap-4 rounded-xl ">
@@ -171,7 +171,7 @@ function Home() {
           </Link>
 
           <Link to="/other-services#trucking">
-            <div className="min-w-[13rem] p-6 text-center text-lg font-semibold flex flex-col items-center justify-between gap-4 rounded-xl">
+            <div className="min-w-[13rem] p-6 text-center text-lg font-semibold flex flex-col items-center justify-between gap-4 rounded-xl mt-10">
               {/* <img
                 src="/used_landing_page/used_other_services/picture 2.png"
                 alt=""
@@ -185,7 +185,7 @@ function Home() {
           </Link>
 
           <Link to="/other-services#rental">
-            <div className="mb-6 min-w-[13rem] p-6 text-center text-lg font-semibold flex flex-col items-center justify-between gap-4 rounded-xl">
+            <div className="mb-6 min-w-[13rem] p-6 text-center text-lg font-semibold flex flex-col items-center justify-between gap-4 rounded-xl mt-10">
               {/* <img
                 src="/used_landing_page/used_other_services/picture 3.png"
                 alt=""
