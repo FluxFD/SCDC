@@ -115,7 +115,7 @@ const OtherServices = () => {
           >
             <Truck className="w-24 h-24 text-[#641717] mb-4" strokeWidth={1} />
             <h2 className="text-3xl font-bold mb-4 text-customDarkRed">
-              Aggreegates Transport Solutions (Trucking)
+              Aggregates Transport Solutions (Trucking)
             </h2>
             <p className="text-gray-700 mb-4">
               Our aggregates transport solutions provide efficient and reliable

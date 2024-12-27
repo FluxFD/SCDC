@@ -178,7 +178,7 @@ function Home() {
               /> */}
               <Truck className="size-24 text-white" strokeWidth={1} />
               <p>
-                Aggreegates Transport <br />
+                Aggregates Transport <br />
                 Solutions (Trucking)
               </p>
             </div>
