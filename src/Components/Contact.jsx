@@ -61,7 +61,7 @@ const Contact = () => {
             <div className="text-lg sm:text-2xl font-extrabold italic space-y-2 sm:space-y-4">
               <p>We build with Passion</p>
               <p>Plan with Precision </p>
-              <p>Deliver with Excellece.</p>
+              <p>Deliver with Excellence.</p>
             </div>
 
             <div className="text-start space-y-4 max-w-lg italic text-lg text-customLightgray">
