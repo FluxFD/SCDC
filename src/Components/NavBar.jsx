@@ -44,7 +44,7 @@ const NAV_LINKS = [
   //   ],
   // },
   {
-    title: "Contacts",
+    title: "Contact Us",
     href: "/contact-us",
   },
 ];

@@ -84,8 +84,8 @@ const Contact = () => {
 
               <div className="flex gap-4">
                 <IoMdMail className="size-6 text-customOrange" />
-                <a href="mailto:sanluiscdc.inquiries@gmail.com">
-                  Email: sanluiscdc.inquiries@gmail.com
+                <a href="mailto:inquiries@sanluiscdc.com">
+                  Email: inquiries@sanluiscdc.com
                 </a>
               </div>
 

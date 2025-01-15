@@ -29,8 +29,8 @@ const Contact = () => {
 
                 <div>
                   <p className="font-bold">Email</p>
-                  <a className="italic" href="mailto:sanluiscdc.inquiries@gmail.com">
-                  sanluiscdc.inquiries@gmail.com
+                  <a className="italic" href="mailto:inquiries@sanluiscdc.com">
+                  inquiries@sanluiscdc.com
                   </a>
                 </div>
                 <div>
