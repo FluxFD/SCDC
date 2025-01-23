@@ -43,8 +43,8 @@ const AboutFounders = () => {
         <div className="container w-10/12 mt-20 mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-8">
             <div className="flex flex-col items-center gap-4 md:order-2">
-              <div className="w-48 h-48 overflow-hidden bg-gray-50 flex-shrink-0">
-                <img src="/used_about/Mey.jpg" className="object-cover" />
+              <div className="w-48 h-48 overflow-hidden flex-shrink-0">
+                <img src="/about.jpg" className="object-cover" />
               </div>
             </div>
             <div className="flex-1 text-justify md:text-justify leading-relaxed max-w-5xl md:order-1">
