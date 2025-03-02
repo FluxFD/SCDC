@@ -28,11 +28,11 @@ const AboutUs = () => {
         </div>
 
         <PhotoProvider speed={() => 200}>
-          <PhotoView src="/used_landing_page/Picture 4.jpg">
+          <PhotoView src="/used_landing_page/NewAboutUs.JPG">
             <img
               loading="lazy"
               data-aos="fade-left"
-              src="/used_landing_page/Picture 4.jpg"
+              src="/used_landing_page/NewAboutUs.JPG"
               alt="Grid 1"
               className="aspect-video object-cover object-top rounded-2xl"
             />
