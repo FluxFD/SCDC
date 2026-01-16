@@ -32,7 +32,7 @@ function App() {
         }}
       >
         <Router>
-          <NavBar />
+          {/* <NavBar /> */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/services" element={<Services />} />
