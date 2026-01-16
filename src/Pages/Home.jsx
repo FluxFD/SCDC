@@ -28,12 +28,8 @@ function Home() {
 
   return (
     <div className="w-full min-h-screen flex flex-col font-inter pt-[64px] lg:pt-[80px]">
-      <section className="relative w-full h-[40vh] sm:h-[calc(100vh-80px)]">
-        {/* <div className="space-y-4 tracking-wide absolute z-10 left-10 top-1/2 -translate-y-1/2 text-6xl font-bold text-white">
-          <h1>Your Reliable</h1>
-          <h1>Building Partner</h1>
-        </div> */}
-
+      <h1>404 not found server expired! contact your customer support!</h1>
+      {/* <section className="relative w-full h-[40vh] sm:h-[calc(100vh-80px)]">
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
@@ -172,10 +168,7 @@ function Home() {
 
           <Link to="/other-services#trucking">
             <div className="min-w-[13rem] p-6 text-center text-lg font-semibold flex flex-col items-center justify-between gap-4 rounded-xl mt-10 scale-on-hover">
-              {/* <img
-                src="/used_landing_page/used_other_services/picture 2.png"
-                alt=""
-              /> */}
+
               <Truck className="size-24 text-white" strokeWidth={1} />
               <p>
                 Aggregates Transport <br />
@@ -186,10 +179,7 @@ function Home() {
 
           <Link to="/other-services#rental">
             <div className="mb-6 min-w-[13rem] p-6 text-center text-lg font-semibold flex flex-col items-center justify-between gap-4 rounded-xl mt-10 scale-on-hover">
-              {/* <img
-                src="/used_landing_page/used_other_services/picture 3.png"
-                alt=""
-              /> */}
+
               <Tractor className="size-24 text-white" strokeWidth={1} />
               <p>Rental of Equipment</p>
             </div>
@@ -200,7 +190,7 @@ function Home() {
       <Testimonials />
       <LogoCarousel />
       <Gallery />
-      <Contact />
+      <Contact /> */}
     </div>
   );
 }
