@@ -28,8 +28,8 @@ function Home() {
 
   return (
     <div className="w-full min-h-screen flex flex-col font-inter pt-[64px] lg:pt-[80px]">
-      <h1>404 not found server expired! contact your customer support!</h1>
-      {/* <section className="relative w-full h-[40vh] sm:h-[calc(100vh-80px)]">
+      {/* <h1>404 not found server expired! contact your customer support!</h1> */}
+        <section className="relative w-full h-[40vh] sm:h-[calc(100vh-80px)]">
         <Swiper
           spaceBetween={30}
           centeredSlides={true}
@@ -190,7 +190,7 @@ function Home() {
       <Testimonials />
       <LogoCarousel />
       <Gallery />
-      <Contact /> */}
+      <Contact /> 
     </div>
   );
 }
